@@ -21,6 +21,7 @@ import Log from "../pages/login/Log";
 import Reg from "../pages/register/Reg";
 import SuperAdminUploads from "../pages/dashboard/SuperAdminUploads";
 import Wildfire from "../pages/trackDiaster/wildfire/Wildfire";
+import Earthquake from "../pages/trackDiaster/earthquake/Earthquake";
 
 const Routers = () => {
 	return (
@@ -145,6 +146,16 @@ const Routers = () => {
           </IsLoggedIn>
         }
       />
+
+      <Route
+        path="/earthquake-detect"
+        element={
+          <IsLoggedIn>
+            <Earthquake />
+          </IsLoggedIn>
+        }
+      />
+
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
