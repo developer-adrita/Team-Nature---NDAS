@@ -6,6 +6,8 @@ import LocationMarker from "./wildfire/LocationMarker";
 const Map = ({ eventData, center, zoom }) => {
   const [locationInfo, setLocationInfo] = useState(null);
 
+  const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
   const markers = eventData.map((ev) => {
     if (ev.categories[0].id === 8) {
       return (
@@ -29,7 +31,7 @@ const Map = ({ eventData, center, zoom }) => {
     >
       <GoogleMapReact
         bootstrapURLKey={{
-          key: "AIzaSyAFv8KHiwoyUTTErSjwBtiPQJgEgf9l-aM",
+          key: {API_KEY},
         }}
         defaultCenter={center}
         defaultZoom={zoom}
@@ -43,8 +45,8 @@ const Map = ({ eventData, center, zoom }) => {
 
 Map.defaultProps = {
   center: {
-    lat: 42.3265,
-    lng: -122.8756,
+    lat: 38.8906504,
+    lng: -123.8756,
   },
   zoom: 6,
 };

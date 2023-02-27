@@ -2,6 +2,7 @@ import "react-toastify/dist/ReactToastify.css";
 import React, { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import { BrowserRouter } from "react-router-dom";
+import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
 import "./App.css";
@@ -10,6 +11,7 @@ import "./App.css";
 import { useStateContext } from "./contexts/ContextProvider";
 import Routers from "./routers/Routers";
 import { useIsLoggedInQuery } from "./services/apiSlice";
+import { FiSettings } from "react-icons/fi";
 
 const App = () => {
 	const {
@@ -37,7 +39,7 @@ const App = () => {
 		<div className={currentMode === "Dark" ? "dark" : ""}>
 			<BrowserRouter>
 				<div className="flex relative dark:bg-main-dark-bg">
-				{/* <div className="fixed right-4 bottom-4" style={{ zIndex: "1000" }}>
+				<div className="fixed right-4 bottom-4" style={{ zIndex: "1000" }}>
 						<TooltipComponent content="Settings" position="Top">
 							<button
 								type="button"
@@ -48,7 +50,7 @@ const App = () => {
 								<FiSettings />
 							</button>
 						</TooltipComponent>
-					</div> */}
+					</div>
 					{isLoggedInfo.isSuccess && isLoggedInfo.data?.status && (
 						<>
 							{activeMenu ? (

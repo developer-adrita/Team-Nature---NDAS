@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "@iconify/icons-mdi": "^1.2.41",
+    "@iconify/icons-ri": "^1.2.4",
     "@iconify/react": "^4.1.0",
+    "@react-google-maps/api": "^2.18.1",
     "@reduxjs/toolkit": "^1.9.1",
     "@syncfusion/ej2": "^19.4.48",
     "@syncfusion/ej2-react-calendars": "^19.4.48",

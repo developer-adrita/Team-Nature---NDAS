@@ -1,13 +1,13 @@
-import React from 'react';
-import Loading from '../../../components/loading/Loading';
 
+import React from "react";
+import EarthquakeMap from "./EarthquakeMap";
 
 const Earthquake = () => {
-    return (
-        <div>
-           <Loading/>
-        </div>
-    );
+  return (
+    <div>
+      <EarthquakeMap/>
+    </div>
+  );
 };
 
 export default Earthquake;

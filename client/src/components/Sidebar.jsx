@@ -40,15 +40,15 @@ const Sidebar = () => {
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
               <div className="text-3xl font-semibold text-center text-green-700 uppercase mt-5">
-              <a href="/">
-                <img
-                  style={{
-                    width: "180px",
-                  }}
-                  src="https://res.cloudinary.com/hostingimagesservice/image/upload/v1676869773/My_project-1_a74det.png"
-                  alt=""
-                />{" "}
-              </a>
+                <a href="/">
+                  <img
+                    style={{
+                      width: "180px",
+                    }}
+                    src="https://res.cloudinary.com/hostingimagesservice/image/upload/v1677436613/My_project-1_1_rbvhqi.png"
+                    alt=""
+                  />{" "}
+                </a>
               </div>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
