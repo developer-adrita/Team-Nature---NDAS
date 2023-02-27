@@ -1,9 +1,26 @@
 import GoogleMapReact from "google-map-react";
-import EarthLocationMarker from "./EarthLocationMarker";
+import LocationMarker from "../wildfire/LocationMarker";
+import locationIcon from "@iconify/icons-ri/earthquake-line";
 
-const EarthquakeMap = ({ center, zoom }) => {
+
+const EarthquakeMap = ({ earthEventData, center, zoom }) => {
   const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
+  const markers = earthEventData.map((feature) => {
+  
+      return (
+        // <EarthLocationMarker
+        <LocationMarker
+          lat={feature.geometry.coordinates[0]}
+          lng={feature.geometry.coordinates[1]}
+          // onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
+          locationIcon={locationIcon}
+          color="yellow"
+        />
+      );
+    
+    return null;
+  });
   return (
     <div
       style={{
@@ -20,8 +37,7 @@ const EarthquakeMap = ({ center, zoom }) => {
         defaultCenter={center}
         defaultZoom={zoom}
       >
-        <EarthLocationMarker lat={center.lat} lng={center.lng} />
-
+        {markers}
       </GoogleMapReact>
     </div>
   );
@@ -29,10 +45,10 @@ const EarthquakeMap = ({ center, zoom }) => {
 
 EarthquakeMap.defaultProps = {
   center: {
-    lat: 35.8617,
-    lng: 104.1954,
+    lat: -59.997805,
+    lng:  -0.778333
   },
-  zoom: 6,
+  zoom: 1,
 };
 
 export default EarthquakeMap;

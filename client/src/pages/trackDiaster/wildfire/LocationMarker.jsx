@@ -1,14 +1,16 @@
-import { Icon } from '@iconify/react';
-import locationIcon from '@iconify/icons-mdi/fire-alert'
-const LocationMarker = ( { lat, lng, onClick } ) => {
-    return (
-        <div onClick={onClick}>
-            <Icon style={{
-                fontSize: "2rem",
-                color: "red",
-            }} icon={locationIcon}  />
-        </div>
-    );
+import { Icon } from "@iconify/react";
+const LocationMarker = ({ onClick, locationIcon, color = "red" }) => {
+  return (
+    <div onClick={onClick}>
+      <Icon
+        style={{
+          fontSize: "2rem",
+          color,
+        }}
+        icon={locationIcon}
+      />
+    </div>
+  );
 };
 
 export default LocationMarker;

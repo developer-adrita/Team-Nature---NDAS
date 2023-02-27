@@ -2,6 +2,8 @@ import GoogleMapReact from "google-map-react";
 import { useState } from "react";
 import LocationInfoBox from "./wildfire/LocationInfoBox";
 import LocationMarker from "./wildfire/LocationMarker";
+import locationIcon from "@iconify/icons-mdi/fire-alert";
+
 
 const Map = ({ eventData, center, zoom }) => {
   const [locationInfo, setLocationInfo] = useState(null);
@@ -15,6 +17,7 @@ const Map = ({ eventData, center, zoom }) => {
           lat={ev.geometries[0].coordinates[1]}
           lng={ev.geometries[0].coordinates[0]}
           onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
+          locationIcon={locationIcon}
         />
       );
     }
