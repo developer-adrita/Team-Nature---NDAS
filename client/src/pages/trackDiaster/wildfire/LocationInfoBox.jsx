@@ -1,6 +1,6 @@
 import React from "react";
 
-const LocationInfoBox = ({ info }) => {
+const LocationInfoBox = ({ id, place }) => {
   return (
     <div
       style={{
@@ -15,6 +15,8 @@ const LocationInfoBox = ({ info }) => {
         fontSize: "18px",
         color: "#fff",
       }}
+
+      className="locationInfoBox"
     >
       <h2
         style={{
@@ -32,14 +34,14 @@ const LocationInfoBox = ({ info }) => {
           padding: "5px 0",
         }}
       >
-        ID: <strong>{info.id}</strong>
+        ID: <strong>{id}</strong>
       </li>
       <li
         style={{
           padding: "5px 0",
         }}
       >
-        Title: <strong>{info.title}</strong>
+        Title: <strong>{place}</strong>
       </li>
     </div>
   );

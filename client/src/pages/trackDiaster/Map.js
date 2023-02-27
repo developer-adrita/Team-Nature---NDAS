@@ -16,8 +16,9 @@ const Map = ({ eventData, center, zoom }) => {
         <LocationMarker
           lat={ev.geometries[0].coordinates[1]}
           lng={ev.geometries[0].coordinates[0]}
-          onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
+          onClick={() => setLocationInfo({ id: ev.id, place: ev.title })}
           locationIcon={locationIcon}
+          color="tomato"
         />
       );
     }
@@ -31,6 +32,7 @@ const Map = ({ eventData, center, zoom }) => {
         height: "105vh",
         position: "relative",
       }}
+      className="map-box"
     >
       <GoogleMapReact
         bootstrapURLKey={{
@@ -41,7 +43,7 @@ const Map = ({ eventData, center, zoom }) => {
       >
         {markers}
       </GoogleMapReact>
-      {locationInfo && <LocationInfoBox info={locationInfo} />}
+      {locationInfo && <LocationInfoBox id={locationInfo.id} place={locationInfo.place} />}
     </div>
   );
 };
