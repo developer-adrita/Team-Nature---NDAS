@@ -17,11 +17,11 @@ import Reg from "../pages/register/Reg";
 import SuperAdminUploads from "../pages/dashboard/SuperAdminUploads";
 import Wildfire from "../pages/trackDiaster/wildfire/Wildfire";
 import Earthquake from "../pages/trackDiaster/earthquake/Earthquake";
+import Weather from "../pages/weather/Weather";
 
 const Routers = () => {
-	return (
+  return (
     <Routes>
-
       <Route
         path="/admin-uploads"
         element={
@@ -97,6 +97,15 @@ const Routers = () => {
         element={
           <IsLoggedIn>
             <Earthquake />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/check-forecast"
+        element={
+          <IsLoggedIn>
+            <Weather />
           </IsLoggedIn>
         }
       />

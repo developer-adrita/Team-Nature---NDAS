@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 body {
@@ -6,6 +10,29 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.form-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/images/nws-jul-pop-error-2015-2016.gif') no-repeat 50% 40% / cover;
+    height: auto;
+    @apply w-1/2 p-5 rounded-3xl
+}
+
+.alert-notice::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-top: -3px;
+    @apply animate-ping bg-pink-800
+}
