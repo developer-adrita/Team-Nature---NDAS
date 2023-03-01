@@ -58,54 +58,6 @@ const Routers = () => {
           </IsAlreadyLoggedIn>
         }
       />
-      {/* <Route
-        path="/select-courses"
-        element={
-          <IsLoggedIn>
-            <Course />
-          </IsLoggedIn>
-        }
-      />
-      <Route
-        path="/view-course"
-        element={
-          <IsLoggedIn>
-            <ViewCourse />
-          </IsLoggedIn>
-        }
-      />
-      <Route
-        path="/view-topic"
-        element={
-          <IsLoggedIn>
-            <ViewTopic />
-          </IsLoggedIn>
-        }
-      />
-      <Route
-        path="/topic-content"
-        element={
-          <IsLoggedIn>
-            <ViewContent />
-          </IsLoggedIn>
-        }
-      />
-      <Route
-        path="/audio-courses"
-        element={
-          <IsLoggedIn>
-            <Audio />
-          </IsLoggedIn>
-        }
-      />
-      <Route
-        path="/career-building-courses"
-        element={
-          <IsLoggedIn>
-            <CareerBuildingCourses />
-          </IsLoggedIn>
-        }
-      /> */}
       <Route
         path="/talk-to-expert"
         element={
