@@ -2,22 +2,17 @@ import React from "react";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import { Route, Routes } from "react-router-dom";
 import IsLoggedIn from "./IsLoggedIn";
-import Course from "./../pages/general/Course";
-import Audio from "../pages/blinded/Audio";
-import CareerBuildingCourses from "./../pages/buildCareer/CareerBuildingCourses";
+
 import TalkToExperts from "./../pages/buildCareer/TalkToExperts";
 import ShareYourOpinion from "./../pages/buildCareer/ShareYourOpinion";
 import Contact from "./../pages/support/Contact";
-import ViewCourse from "../pages/general/ViewCourse";
-import ViewTopic from "../pages/general/ViewTopic";
-import ViewContent from "../pages/general/ViewContent";
-import Login from "../pages/login/Login";
+
 import Register from "./../pages/register/Register";
 import IsAlreadyLoggedIn from "./IsAlreadyLoggedIn";
 import Uploads from "../pages/dashboard/Uploads";
 import AdminProtected from "./AdminProtected";
 import SuperAdmin from "./SuperAdminProtected";
-import Log from "../pages/login/Log";
+import Login from "../pages/login/Login";
 import Reg from "../pages/register/Reg";
 import SuperAdminUploads from "../pages/dashboard/SuperAdminUploads";
 import Wildfire from "../pages/trackDiaster/wildfire/Wildfire";
@@ -26,9 +21,7 @@ import Earthquake from "../pages/trackDiaster/earthquake/Earthquake";
 const Routers = () => {
 	return (
     <Routes>
-      <Route path="/loginnnn" element={<Log />} />
 
-      <Route path="/regg" element={<Reg />} />
       <Route
         path="/admin-uploads"
         element={
@@ -65,7 +58,7 @@ const Routers = () => {
           </IsAlreadyLoggedIn>
         }
       />
-      <Route
+      {/* <Route
         path="/select-courses"
         element={
           <IsLoggedIn>
@@ -112,7 +105,7 @@ const Routers = () => {
             <CareerBuildingCourses />
           </IsLoggedIn>
         }
-      />
+      /> */}
       <Route
         path="/talk-to-expert"
         element={
