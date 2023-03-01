@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useLoginMutation } from "../../services/apiSlice";
+import imageBG from "../../assets/images/wp2381640.jpg";
 
 const initialData = { email: "", password: "" };
 const error = "border-red-500";
@@ -42,8 +43,26 @@ export default function Login() {
   };
   return (
     <div>
-      <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">
-        <div className="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg">
+      <div
+        style={{
+          backgroundImage: `linear-gradient(
+        rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)
+      ),url(${imageBG})`,
+          position: "relative",
+          backgroundSize: "cover",
+          minHeight: "110vh",
+          width: "100%",
+        }}
+        className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50"
+      >
+        <div
+          style={{
+            background:
+              "linear-gradient(146.98deg, #2F3135 7.55%, rgba(38, 41, 49, 0) 100%)",
+            backDrop: "blur(35px)",
+          }}
+          className="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg"
+        >
           <div className="text-3xl font-semibold text-center text-green-700 uppercase mt-5 mb-12">
             <a href="/">
               <img
@@ -51,7 +70,7 @@ export default function Login() {
                   width: "250px",
                   margin: "10px auto",
                 }}
-                src="https://res.cloudinary.com/hostingimagesservice/image/upload/v1676869773/My_project-1_a74det.png"
+                src="https://res.cloudinary.com/hostingimagesservice/image/upload/v1677436613/My_project-1_1_rbvhqi.png"
                 alt=""
               />{" "}
               {/* <h3 className="text-4xl font-bold text-green-600">
@@ -63,7 +82,7 @@ export default function Login() {
             <div className="mt-4">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700 undefined"
+                className="block text-sm font-medium text-white undefined"
               >
                 Email
               </label>
@@ -83,7 +102,7 @@ export default function Login() {
             <div className="mt-4">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-700 undefined"
+                className="block text-sm font-medium text-white  undefined"
               >
                 Password
               </label>
@@ -109,8 +128,8 @@ export default function Login() {
               </button>
             </div>
           </form>
-          <div className="mt-4 text-grey-600">
-            Already have an account?{" "}
+          <div className="mt-4 text-white">
+            Have an account?{" "}
             <span>
               <Link to="/register" className="text-green-600 hover:underline">
                 Sign Up
@@ -119,14 +138,14 @@ export default function Login() {
           </div>
           <div className="flex items-center w-full my-4">
             <hr className="w-full" />
-            <p className="px-3 ">OR</p>
+            <p className="px-3 text-white">OR</p>
             <hr className="w-full" />
           </div>
           <div className="my-6 space-y-2">
             <button
               aria-label="Login with Google"
               type="button"
-              className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-green-400"
+              className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-green-400 bg-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +159,7 @@ export default function Login() {
             <button
               aria-label="Login with GitHub"
               role="button"
-              className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-green-400"
+              className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-green-400 bg-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
