@@ -25,6 +25,10 @@ Created initial desing for About Us page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929295/About_Us_upbpwz.jpg" /> <br/>
 
+Created initial desing for FAQ page <br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929300/FAQ_dghbqr.jpg" /> <br/>
+
 
 
 
