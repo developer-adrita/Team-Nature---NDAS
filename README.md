@@ -17,6 +17,11 @@ Created initial desing for Wildfire page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929275/Wildfire_te1z5g.jpg" /> <br/>
 
+Created initial desing for Earthquake page <br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929280/Earthquake_uymvng.jpg" /> <br/>
+
+
 
 
 
