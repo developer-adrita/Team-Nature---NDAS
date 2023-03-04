@@ -15,7 +15,7 @@ Created initial desing for login page <br/>
 
 Created initial desing for Wildfire page <br/>
 
-<img src="[https://res.cloudinary.com/dbginqlhc/image/upload/v1677929259/Login_Page_bea1gz.jpg](https://res.cloudinary.com/dbginqlhc/image/upload/v1677929275/Wildfire_te1z5g.jpg)" /> <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929275/Wildfire_te1z5g.jpg" /> <br/>
 
 
 
