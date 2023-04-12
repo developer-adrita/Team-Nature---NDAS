@@ -18,6 +18,16 @@ const AddTopic = () => {
   const [addCategory, responseInfo] = useAddTopicMutation();
   const courseInfo = useViewCoursesQuery();
 
+  const [fileAdded, setFileAdded] = useState(false);
+
+  const handleFileChange = (event) => {
+    if (event.target.files.length > 0) {
+      setFileAdded(true);
+    } else {
+      setFileAdded(false);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     addCategory(formData)
@@ -39,24 +49,24 @@ const AddTopic = () => {
   };
 
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+    <div className="m-3 p-2 md:p-5 rounded-3xl text-sky-300 Cntctbg">
       <div className="mb-10">
-        <Header category="Topic" title="Add Topic" />
+        <Header category="Tips" title="Add Tips" />
       </div>
 
       <form className="w-full" onSubmit={handleSubmit}>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
               htmlFor="grid-first-name"
             >
-              Topic Name
+              Tips Name
             </label>
             <input
               required
               onChange={handleOnChange}
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
               id="grid-first-name"
               type="text"
               placeholder="name"
@@ -67,9 +77,9 @@ const AddTopic = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               htmlFor="category"
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
             >
-              Select a course
+              Select a tips
             </label>
             <select
               id="category"
@@ -77,9 +87,9 @@ const AddTopic = () => {
               value={formData.course}
               required
               onChange={handleOnChange}
-              className="block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
             >
-              <option value="">--Select course--</option>
+              <option value="">--Select tips--</option>
               {courseInfo.isSuccess &&
                 courseInfo.data?.courses?.map((course, i) => (
                   <option key={i} value={course._id}>
@@ -93,52 +103,61 @@ const AddTopic = () => {
           <div className="w-full px-3">
             <label
               htmlFor="message"
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
             >
-              Topic Description
+              Description
             </label>
             <textarea
               required
               id="message"
               rows="4"
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
               type="message"
               placeholder="Write details here..."
               name="topicDescription"
               value={formData.topicDescription}
               onChange={handleOnChange}
             />
-            <p className="text-gray-600 text-xs italic">
+            <p className="text-sky-300 text-xs italic ml-5">
               Make it as long and as crazy as you'd like
             </p>
           </div>
         </div>
 
-        <div className="w-full my-6 md:mb-0">
+        <div className="mb-4">
           <label
-            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            htmlFor="file_input"
+            className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
+            htmlFor="image"
           >
-            Course Image
+            Image file
           </label>
-          <input
-            onChange={handleOnChange}
-            disabled={responseInfo.isLoading}
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            id="file_input"
-            type="file"
-            name="image"
-            defaultValue={formData.image}
-            accept="image/*"
-          />
+          <div className="relative">
+            <input
+              className="absolute inset-0 opacity-0 z-50"
+              id="image"
+              type="file"
+              onChange={handleFileChange}
+            />
+            <div
+              className={`h-10 w-full flex justify-center items-center border-dashed text-sky-300 border-2 border-sky-300 rounded-3xl ${
+                fileAdded ? "border-green-400" : ""
+              }`}
+            >
+              {!fileAdded ? (
+                <p className="text-gray-400">
+                  Drag and drop your image here or
+                </p>
+              ) : (
+                <p className="text-green-600">Image file added or changed</p>
+              )}
+              <p className="ml-2 text-blue-600">browse</p>
+            </div>
+          </div>
         </div>
 
-        <div className="md:w-2/3">
-          <button
-            className="shadow bg-cyan-500 hover:bg-cyan-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded mt-5"
-            type="submit"
-          >
-            Add Course
+        <div className="container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
+          <button className="Send-Button" type="submit">
+            Add Tips
           </button>
         </div>
       </form>

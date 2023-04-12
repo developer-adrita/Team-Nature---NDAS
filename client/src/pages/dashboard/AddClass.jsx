@@ -31,7 +31,7 @@ const AddClass = () => {
   };
 
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+    <div className="m-3 p-2 md:p-5 rounded-3xl text-sky-300 Cntctbg">
       <div className="mb-10">
         <Header category="Dashboard" title="Add Classes" />
       </div>
