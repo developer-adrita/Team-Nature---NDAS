@@ -4,7 +4,7 @@ import Header from "./Header";
 import SummaryCard from "./SummaryCard";
 
 function Weather() {
-  const API_KEY = process.env.REACT_APP_API_KEY;
+  const API_KEY = "7a368f38c58da97da2f23b37163decef";
   console.log(API_KEY);
   const [noData, setNoData] = useState("No Data Yet");
   const [searchTerm, setSearchTerm] = useState("");
@@ -32,7 +32,9 @@ function Weather() {
         : `lat=${location[0]}&lon=${location[1]}`;
 
     try {
-      let res = await fetch(`${process.env.REACT_APP_URL + how_to_search}
+      let res = await fetch(`${
+        "https://api.openweathermap.org/data/2.5/forecast?" + how_to_search
+      }
       &appid=${API_KEY}&units=metric&cnt=5&exclude=hourly,minutely`);
       let data = await res.json();
       if (data.cod != 200) {
@@ -43,7 +45,7 @@ function Weather() {
       setCity(`${data.city.name}, ${data.city.country}`);
       setWeatherIcon(
         `${
-          process.env.REACT_APP_ICON_URL + data.list[0].weather[0]["icon"]
+          "http://openweathermap.org/img/wn/" + data.list[0].weather[0]["icon"]
         }@4x.png`
       );
     } catch (error) {
@@ -57,8 +59,8 @@ function Weather() {
   };
 
   return (
-    <div>
-      <div className="flex items-center justify-center w-full h-screen ">
+    <div className="text-3xl font-semibold text-center text-cyan-700 uppercase mt-5 mb-12">
+      <div className="flex items-center justify-center h-screen">
         <div className="flex w-3/4 min-h-full rounded-3xl shadow-lg m-auto bg-gray-100">
           {/* form card section  */}
           <div className="form-container">

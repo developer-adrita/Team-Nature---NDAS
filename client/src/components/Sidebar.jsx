@@ -39,7 +39,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <div className="text-3xl font-semibold text-center text-green-700 uppercase mt-5">
+              <div className="text-3xl font-semibold text-center text-cyan-700 uppercase mt-5">
                 <a href="/">
                   <img
                     style={{

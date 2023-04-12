@@ -1,11 +1,10 @@
 import React from 'react';
-
+import "./Header.css"
 const Header = ({ category, title }) => (
-  <div className=" mt-20 mb-5 ml-2">
-    <p className="text-lg text-gray-400">{category}</p>
-    <p className="text-3xl font-extrabold tracking-tight text-slate-900">
-      {title}
-    </p>
+  <div className="container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
+    <p className="text-5xl text-sky-300 title-border mb-5 p-5">{category}</p>
+
+    <p className="text-3xl tracking-tight text-sky-300">{title}</p>
   </div>
 );
 

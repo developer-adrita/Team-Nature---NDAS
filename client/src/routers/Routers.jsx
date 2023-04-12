@@ -3,8 +3,6 @@ import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import { Route, Routes } from "react-router-dom";
 import IsLoggedIn from "./IsLoggedIn";
 
-import TalkToExperts from "./../pages/buildCareer/TalkToExperts";
-import ShareYourOpinion from "./../pages/buildCareer/ShareYourOpinion";
 import Contact from "./../pages/support/Contact";
 
 import Register from "./../pages/register/Register";
@@ -58,22 +56,15 @@ const Routers = () => {
           </IsAlreadyLoggedIn>
         }
       />
-      <Route
-        path="/talk-to-expert"
-        element={
-          <IsLoggedIn>
-            <TalkToExperts />
-          </IsLoggedIn>
-        }
-      />
-      <Route
+      
+      {/* <Route
         path="/faq"
         element={
           <IsLoggedIn>
-            <ShareYourOpinion />
+            <** />
           </IsLoggedIn>
         }
-      />
+      /> */}
       <Route
         path="/contact"
         element={

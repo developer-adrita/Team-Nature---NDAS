@@ -1,0 +1,6 @@
+.title-border {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, rgba(255, 55, 68, 0) 1.85%, #05A8C0 50.04%, rgba(252, 163, 17, 0) 96.91%);
+    border-image-slice: 1;
+    
+}

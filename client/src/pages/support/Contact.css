@@ -1,0 +1,15 @@
+.Send-Button {
+    background-image: linear-gradient(90deg, rgba(5, 168, 192, 0.56) 0%, rgba(80, 205, 223, 0.88) 100%);
+    border-radius: 40px;
+    color: white;
+    width: 202px;
+    height: 48px;
+    left: 626px;
+    top: 865px;
+}
+
+.Cntctbg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../assets/images/Ellipse\ 2.svg");
+}

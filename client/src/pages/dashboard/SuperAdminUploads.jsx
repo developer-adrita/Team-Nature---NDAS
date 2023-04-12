@@ -53,7 +53,7 @@ export default function SuperAdminUploads() {
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
       <Header category="Super-Admin" title="Uploads" />
       <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl ml-5">
-        <div className="text-3xl font-semibold text-center text-green-700 uppercase mb-12">
+        <div className="text-3xl font-semibold text-center text-cyan-700 uppercase mb-12">
           <a href="/">
             <img
               style={{
@@ -108,7 +108,7 @@ export default function SuperAdminUploads() {
                     value={formData.name}
                     type="text"
                     className={
-                      "block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40" +
+                      "block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40" +
                       (registerError && error)
                     }
                   />
@@ -131,7 +131,7 @@ export default function SuperAdminUploads() {
                       value={formData.email}
                       type="email"
                       className={
-                        "block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40" +
+                        "block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40" +
                         (registerError && error)
                       }
                     />
@@ -156,7 +156,7 @@ export default function SuperAdminUploads() {
                     value={formData.phone}
                     type="tel"
                     className={
-                      "block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40" +
+                      "block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40" +
                       (registerError && error)
                     }
                   />
@@ -178,7 +178,7 @@ export default function SuperAdminUploads() {
                     name="password"
                     type="password"
                     className={
-                      "block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40" +
+                      "block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40" +
                       (registerError && error)
                     }
                   />
@@ -187,7 +187,7 @@ export default function SuperAdminUploads() {
             </div>
             <div className="flex flex-col items-start">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 mt-4">
-                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-green-700 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600">
+                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-cyan-700 rounded-md hover:bg-cyan-600 focus:outline-none focus:bg-cyan-600">
                   Add Admin
                 </button>
               </div>

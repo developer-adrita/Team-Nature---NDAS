@@ -2,7 +2,7 @@ import moment from "moment";
 
 function SummaryCard({ day }) {
   let day_icon = `${
-    process.env.REACT_APP_ICON_URL + day.weather[0]["icon"]
+    "http://openweathermap.org/img/wn/" + day.weather[0]["icon"]
   }@2x.png`;
   return (
     <li className="container p-4 flex items-center justify-center bg-gray-200 rounded-lg my-auto mr-1">

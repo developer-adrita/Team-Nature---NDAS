@@ -54,11 +54,11 @@ export const links = [
         route: "drought-detect",
         icon: <GiSunRadiations />,
       },
-      {
-        name: "Blizzard",
-        route: "blizzard-detect",
-        icon: <FaRegSnowflake />,
-      },
+      // {
+      //   name: "Blizzard",
+      //   route: "blizzard-detect",
+      //   icon: <FaRegSnowflake />,
+      // },
       {
         name: "Storm",
         route: "storm-detect",

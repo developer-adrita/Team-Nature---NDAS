@@ -1,0 +1,7 @@
+.Toastify__toast--success .Toastify__checkmark svg path {
+    fill: cyan;
+}
+
+.Toastify__progress-bar {
+    background-color: cyan;
+}
