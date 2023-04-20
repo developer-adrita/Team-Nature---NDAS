@@ -60,7 +60,7 @@ function Weather() {
 
   return (
     <div>
-      <div class="m-3 p-2 md:p-5 rounded-3xl text-sky-300">
+      <div class="text-sky-300">
         <div class="flex flex-col h-full rounded-3xl shadow-lg m-auto bg-[171a20]">
           {/* form card section  */}
           <div className="form-container">
