@@ -59,15 +59,15 @@ function Weather() {
   };
 
   return (
-    <div className="text-3xl font-semibold text-center text-cyan-700 uppercase mt-5 mb-12">
-      <div className="flex items-center justify-center h-screen">
-        <div className="flex w-3/4 min-h-full rounded-3xl shadow-lg m-auto bg-gray-100">
+    <div>
+      <div class="m-3 p-2 md:p-5 rounded-3xl text-sky-300">
+        <div class="flex flex-col h-full rounded-3xl shadow-lg m-auto bg-[171a20]">
           {/* form card section  */}
           <div className="form-container">
             <div className="flex items-center justify-center">
               <h3
-                className="my-auto mr-auto text-xl text-pink-800 font-bold shadow-md py-1 px-3 
-            rounded-md bg-white bg-opacity-30"
+                className="my-auto mr-auto text-xl text-white font-bold shadow-md py-1 px-3 
+            rounded-md bg-gray-600 bg-opacity-30"
               >
                 forecast
               </h3>
@@ -78,7 +78,7 @@ function Weather() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center h-full">
+            <div className="flex flex-col items-center justify-center h-full m-8">
               <h1 className="text-white text-2xl">
                 The Only Weather Forecast You Need
               </h1>
@@ -91,13 +91,13 @@ function Weather() {
                 <input
                   type="text"
                   placeholder="Enter location"
-                  className="relative rounded-xl py-2 px-3 w-2/3 bg-gray-300 bg-opacity-60 text-white placeholder-gray-200"
+                  className="relative rounded-xl py-2 px-3 w-2/3 bg-opacity-60 bg-transparent border-sky-300 text-sky-300 border leading-tight focus:outline-none focus:bg-transparent"
                   onChange={handleChange}
                   required
                 />
                 <button type="submit" className="z-10">
                   <i
-                    className="fa fa-search text-white -ml-10 border-l my-auto z-10 cursor-pointer p-3"
+                    className="fa fa-search text-gray -ml-10 border-l my-auto z-10 cursor-pointer p-3"
                     aria-hidden="true"
                     type="submit"
                   ></i>
@@ -113,24 +113,26 @@ function Weather() {
             </div>
           </div>
           {/* info card section  */}
-          <div className="w-2/4 p-5">
+          <div className="p-5">
             <Header />
             <div className="flex flex-col my-10">
               {/* card jsx  */}
               {weatherData.length === 0 ? (
                 <div className="container p-4 flex items-center justify-center h-1/3 mb-auto">
-                  <h1 className="text-gray-300 text-4xl font-bold uppercase">
+                  <h1 className="text-gray-300 text-9xl	m-8 italic hover:not-italic font-mono-bold uppercase">
                     {noData}
                   </h1>
                 </div>
               ) : (
                 <>
-                  <h1 className="text-5xl text-gray-800 mt-auto mb-4">Today</h1>
+                  <h3 className="text-5xl text-[#5CD8EB] text-center mb-8">
+                    Today
+                  </h3>
                   <DetailCard weather_icon={weatherIcon} data={weatherData} />
-                  <h1 className="text-3xl text-gray-600 mb-4 mt-10">
+                  <h3 className="text-3xl text-[#5CD8EB] text-center mb-8 mt-10">
                     More On {city}
-                  </h1>
-                  <ul className="grid grid-cols-2  gap-2">
+                  </h3>
+                  <ul className="grid grid-cols-1 sm:grid-cols-4 gap-2">
                     {weatherData.list.map((days, index) => {
                       if (index > 0) {
                         return <SummaryCard key={index} day={days} />;
