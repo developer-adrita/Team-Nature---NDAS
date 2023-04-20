@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import AddCourse from "./AddCourse";
 import AddTopic from "./AddTopic";
 import TopicContent from "./TopicContent";
+import HelpCenter from "./HelpCenter";
 
 const Uploads = () => {
 	return (
     <div>
       <div>
-        <AddCourse /> 
+        <AddCourse />
         {/* Need to Change the name */}
       </div>
 
@@ -17,6 +18,10 @@ const Uploads = () => {
 
       <div>
         <TopicContent />
+      </div>
+
+      <div>
+        <HelpCenter />
       </div>
     </div>
   );
