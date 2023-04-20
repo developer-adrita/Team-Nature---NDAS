@@ -16,10 +16,20 @@ import SuperAdminUploads from "../pages/dashboard/SuperAdminUploads";
 import Wildfire from "../pages/trackDiaster/wildfire/Wildfire";
 import Earthquake from "../pages/trackDiaster/earthquake/Earthquake";
 import Weather from "../pages/weather/Weather";
-
+import Home from "../pages/home/Home"
 const Routers = () => {
   return (
     <Routes>
+
+      <Route
+        path="/"
+        element={
+             <IsLoggedIn>
+            <Home/>
+          </IsLoggedIn>
+        }
+      />
+
       <Route
         path="/admin-uploads"
         element={
