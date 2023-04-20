@@ -99,30 +99,6 @@ const AddTopic = () => {
             </select>
           </div>
         </div>
-        <div className="flex flex-wrap -mx-3 mb-6">
-          <div className="w-full px-3">
-            <label
-              htmlFor="message"
-              className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
-            >
-              Description
-            </label>
-            <textarea
-              required
-              id="message"
-              rows="4"
-              className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
-              type="message"
-              placeholder="Write details here..."
-              name="topicDescription"
-              value={formData.topicDescription}
-              onChange={handleOnChange}
-            />
-            <p className="text-sky-300 text-xs italic ml-5">
-              Make it as long and as crazy as you'd like
-            </p>
-          </div>
-        </div>
 
         <div className="mb-4">
           <label
@@ -152,6 +128,31 @@ const AddTopic = () => {
               )}
               <p className="ml-2 text-blue-600">browse</p>
             </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="w-full px-3">
+            <label
+              htmlFor="message"
+              className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
+            >
+              Description
+            </label>
+            <textarea
+              required
+              id="message"
+              rows="4"
+              className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
+              type="message"
+              placeholder="Write details here..."
+              name="topicDescription"
+              value={formData.topicDescription}
+              onChange={handleOnChange}
+            />
+            <p className="text-sky-300 text-xs italic ml-5">
+              Make it as long and as crazy as you'd like
+            </p>
           </div>
         </div>
 
