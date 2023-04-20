@@ -21,9 +21,9 @@ h1 {
 }
 
 .form-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/images/nws-jul-pop-error-2015-2016.gif') no-repeat 50% 40% / cover;
-    height: auto;
-    @apply w-1/2 p-5 rounded-3xl
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/images/weather\ coverTwo.svg') no-repeat 50% 40% / cover;
+    min-height: 35vh;
+    
 }
 
 .alert-notice::after {
