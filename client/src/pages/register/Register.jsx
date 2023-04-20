@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useRegisterMutation } from "../../services/apiSlice";
-
+import imageBG from "../../assets/images/wp2381640.jpg";
 const initialData = { name: "", email: "", phone: "", password: "" };
 const error = "border-red-500";
 
@@ -43,8 +43,26 @@ export default function Register() {
 
   return (
     <div>
-      <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">
-        <div className="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg">
+      <div
+        style={{
+          backgroundImage: `linear-gradient(
+        rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)
+      ),url(${imageBG})`,
+          position: "relative",
+          backgroundSize: "cover",
+          minHeight: "110vh",
+          width: "100%",
+        }}
+        className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50"
+      >
+        <div
+          style={{
+            background:
+              "linear-gradient(146.98deg, #2F3135 7.55%, rgba(38, 41, 49, 0) 100%)",
+            backDrop: "blur(35px)",
+          }}
+          className="w-full px-6 py-4 mt-6 mb-6 overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg"
+        >
           <div className="text-3xl font-semibold text-center text-cyan-700 uppercase mt-5 mb-12">
             <a href="/">
               <img
@@ -52,16 +70,19 @@ export default function Register() {
                   width: "250px",
                   margin: "10px auto",
                 }}
-                src="https://res.cloudinary.com/hostingimagesservice/image/upload/v1676869773/My_project-1_a74det.png"
+                src="https://res.cloudinary.com/hostingimagesservice/image/upload/v1677436613/My_project-1_1_rbvhqi.png"
                 alt=""
               />{" "}
+              {/* <h3 className="text-4xl font-bold text-cyan-600">
+                                NDAS <span> &#8594; </span> Sign In
+                            </h3> */}
             </a>
           </div>
           <form onSubmit={handleSubmit}>
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700 undefined"
+                className="block text-sm font-medium text-white undefined"
               >
                 Name
               </label>
@@ -83,7 +104,7 @@ export default function Register() {
             <div className="mt-4">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700 undefined"
+                className="block text-sm font-medium text-white undefined"
               >
                 Email
               </label>
@@ -105,7 +126,7 @@ export default function Register() {
             <div className="mt-4">
               <label
                 htmlFor="phone"
-                className="block text-sm font-medium text-gray-700 undefined"
+                className="block text-sm font-medium text-white undefined"
               >
                 Phone
               </label>
@@ -127,7 +148,7 @@ export default function Register() {
             <div className="mt-4">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-700 undefined"
+                className="block text-sm font-medium text-white undefined"
               >
                 Password
               </label>
@@ -155,7 +176,7 @@ export default function Register() {
               </button>
             </div>
           </form>
-          <div className="mt-4 text-grey-600">
+          <div className="mt-4 text-white">
             Already have an account?{" "}
             <span>
               <Link to="/login" className="text-cyan-600 hover:underline">
@@ -172,7 +193,7 @@ export default function Register() {
             <button
               aria-label="Login with Google"
               type="button"
-              className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-cyan-400"
+              className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-cyan-400 bg-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +207,7 @@ export default function Register() {
             <button
               aria-label="Login with GitHub"
               role="button"
-              className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-cyan-400"
+              className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-cyan-400 bg-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
