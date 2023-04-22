@@ -22,7 +22,7 @@ const LocationInfoBox = ({ id, place }) => {
         style={{
           fontSize: "35px",
           fontWeight: "600",
-          fontFamily: "Gill Sans Extrabold",
+          fontFamily: "Poppins",
           listStyleType: "none",
           padding: "0",
         }}
