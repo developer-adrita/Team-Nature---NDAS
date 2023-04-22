@@ -2,7 +2,6 @@ import { useState } from "react";
 import DetailCard from "./DetailCard";
 import Header from "./Header";
 import SummaryCard from "./SummaryCard";
-
 function Weather() {
   const API_KEY = "7a368f38c58da97da2f23b37163decef";
   console.log(API_KEY);
@@ -60,8 +59,8 @@ function Weather() {
 
   return (
     <div>
-      <div class="text-sky-300">
-        <div class="flex flex-col h-full rounded-3xl shadow-lg m-auto bg-[171a20]">
+      <div class="text-[#5CD8EB]">
+        <div>
           {/* form card section  */}
           <div className="form-container">
             <div className="flex items-center justify-center">
@@ -115,13 +114,26 @@ function Weather() {
           {/* info card section  */}
           <div className="p-5">
             <Header />
-            <div className="flex flex-col my-10">
-              {/* card jsx  */}
+
+            <div className="flex flex-col my-5">
               {weatherData.length === 0 ? (
-                <div className="container p-4 flex items-center justify-center h-1/3 mb-auto">
-                  <h1 className="text-gray-300 text-9xl	m-8 italic hover:not-italic font-mono-bold uppercase">
-                    {noData}
-                  </h1>
+                <div className="NoDataYet">
+                  <div className="flex flex-col items-center justify-center h-full my-8 p-8">
+                    <div className="rounded-lg px-4">
+                      <h1 className="text-[#5CD8EB] m-8 text-4xl flex items-center justify-center ">
+                        Please Enter location first
+                      </h1>
+                    </div>
+                    <hr className="h-0.5 bg-white w-1/2 rounded-full my-5" />
+                    <div className="flex items-center justify-center m-5">
+                      <i className="fas fa-question-circle text-white text-3xl mr-3"></i>
+                      <p className="text-white text-sm">Need help?</p>
+                      <br />
+                      <i className="fas fa-sun text-yellow-400 text-3xl ml-3"></i>
+                      <i className="fas fa-cloud text-gray-400 text-3xl ml-3"></i>
+                      <i className="fas fa-umbrella text-blue-400 text-3xl ml-3"></i>
+                    </div>
+                  </div>
                 </div>
               ) : (
                 <>
