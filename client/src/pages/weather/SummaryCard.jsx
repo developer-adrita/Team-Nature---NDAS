@@ -12,10 +12,15 @@ function SummaryCard({ day }) {
         // background:
         //   "linear-gradient(160.01deg, rgba(65, 68, 68, 0.26) -22.96%, rgba(105, 207, 230, 0.53) 93.82%)",
       }}
+      onMouseOver={(e) =>
+        (e.currentTarget.style.background =
+          "linear-gradient(160.01deg, rgba(105, 207, 230, 0.53) -22.96%, rgba(65, 68, 68, 0.26) 93.82%)")
+      }
+      onMouseOut={(e) => (e.target.style.background = "#272C32")}
       className="container p-4 flex items-center justify-center bg-transparent rounded-lg my-auto mr-1"
     >
       <div className="my-auto">
-        <p className="font-bold text-3xl text-sky-600 mb-2">
+        <p className="font-bold text-3xl text-[#5CD8EB] mb-2">
           {Math.round(day.main.temp)}&deg;C
         </p>
         <p className="text-2xl text-white tracking-widest">
@@ -25,7 +30,7 @@ function SummaryCard({ day }) {
         <p className="text-white text-xs uppercase tracking-widest">
           {day.weather[0].description}
         </p>
-        <p className="tracking-wider">
+        <p className="tracking-wider text-white">
           {moment(day.dt_txt).format("dddd hh:mm")}am
         </p>
       </div>
