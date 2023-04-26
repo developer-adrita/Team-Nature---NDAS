@@ -50,32 +50,20 @@ export default function SuperAdminUploads() {
   };
 
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+    <div className="m-3 p-2 md:p-5 rounded-3xl text-sky-300 Cntctbg">
       <Header category="Super-Admin" title="Uploads" />
-      <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl ml-5">
-        <div className="text-3xl font-semibold text-center text-cyan-700 uppercase mb-12">
-          <a href="/">
-            <img
-              style={{
-                width: "250px",
-                margin: "2px auto",
-              }}
-              src="https://res.cloudinary.com/hostingimagesservice/image/upload/v1676923694/M0NvK80tG_k4si13.gif"
-              alt=""
-            />{" "}
-          </a>
-        </div>
+      <div>
         <div className="w-full">
           <form
             style={{
-              marginLeft: "5%",
+              margin: "6%",
             }}
             onSubmit={handleSubmit}
           >
             <div className="w-full">
               <label
                 htmlFor="category"
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
               >
                 Select admin
               </label>
@@ -85,17 +73,18 @@ export default function SuperAdminUploads() {
                 value={formData.user_type}
                 required
                 onChange={handleOnChange}
-                className="block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
               >
+                <option value="">--Select category--</option>
                 <option value="admin">Admin</option>
                 <option value="super-admin">Super Admin</option>
               </select>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 mt-2">
                 <label
                   htmlFor="name"
-                  className="block text-sm font-bold text-gray-700 undefined"
+                  className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
                 >
                   Name
                 </label>
@@ -107,18 +96,15 @@ export default function SuperAdminUploads() {
                     onChange={handleOnChange}
                     value={formData.name}
                     type="text"
-                    className={
-                      "block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40" +
-                      (registerError && error)
-                    }
+                    className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
                   />
                 </div>
               </div>
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 mt-2">
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-bold text-gray-700 undefined"
+                    className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
                   >
                     Email
                   </label>
@@ -130,10 +116,7 @@ export default function SuperAdminUploads() {
                       onChange={handleOnChange}
                       value={formData.email}
                       type="email"
-                      className={
-                        "block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40" +
-                        (registerError && error)
-                      }
+                      className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
                     />
                   </div>
                 </div>
@@ -143,7 +126,7 @@ export default function SuperAdminUploads() {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   htmlFor="phone"
-                  className="block text-sm font-bold text-gray-700 undefined"
+                  className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
                 >
                   Phone
                 </label>
@@ -155,17 +138,14 @@ export default function SuperAdminUploads() {
                     onChange={handleOnChange}
                     value={formData.phone}
                     type="tel"
-                    className={
-                      "block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40" +
-                      (registerError && error)
-                    }
+                    className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
                   />
                 </div>
               </div>
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   htmlFor="password"
-                  className="block text-sm font-bold text-gray-700  undefined"
+                  className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
                 >
                   Password
                 </label>
@@ -177,20 +157,15 @@ export default function SuperAdminUploads() {
                     onChange={handleOnChange}
                     name="password"
                     type="password"
-                    className={
-                      "block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40" +
-                      (registerError && error)
-                    }
+                    className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
                   />
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-start">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 mt-4">
-                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-cyan-700 rounded-md hover:bg-cyan-600 focus:outline-none focus:bg-cyan-600">
-                  Add Admin
-                </button>
-              </div>
+            <div className="container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
+              <button className="Send-Button" type="submit">
+                Add Admin
+              </button>
             </div>
           </form>
         </div>
