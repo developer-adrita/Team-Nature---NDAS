@@ -17,15 +17,15 @@ import Wildfire from "../pages/trackDiaster/wildfire/Wildfire";
 import Earthquake from "../pages/trackDiaster/earthquake/Earthquake";
 import Weather from "../pages/weather/Weather";
 import Home from "../pages/home/Home"
+import Tips from "../pages/tips/Tips";
 const Routers = () => {
   return (
     <Routes>
-
       <Route
         path="/"
         element={
-             <IsLoggedIn>
-            <Home/>
+          <IsLoggedIn>
+            <Home />
           </IsLoggedIn>
         }
       />
@@ -66,7 +66,7 @@ const Routers = () => {
           </IsAlreadyLoggedIn>
         }
       />
-      
+
       {/* <Route
         path="/faq"
         element={
@@ -107,6 +107,15 @@ const Routers = () => {
         element={
           <IsLoggedIn>
             <Weather />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/tips"
+        element={
+          <IsLoggedIn>
+            <Tips />
           </IsLoggedIn>
         }
       />
