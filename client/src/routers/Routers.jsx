@@ -18,6 +18,7 @@ import Earthquake from "../pages/trackDiaster/earthquake/Earthquake";
 import Weather from "../pages/weather/Weather";
 import Home from "../pages/home/Home"
 import Tips from "../pages/tips/Tips";
+import TermsAndCond from "../pages/termsAndCondition/TermsAndCond";
 const Routers = () => {
   return (
     <Routes>
@@ -116,6 +117,15 @@ const Routers = () => {
         element={
           <IsLoggedIn>
             <Tips />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/terms-conditions"
+        element={
+          <IsLoggedIn>
+            <TermsAndCond />
           </IsLoggedIn>
         }
       />
