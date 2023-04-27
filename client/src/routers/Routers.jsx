@@ -19,6 +19,8 @@ import Weather from "../pages/weather/Weather";
 import Home from "../pages/home/Home"
 import Tips from "../pages/tips/Tips";
 import TermsAndCond from "../pages/termsAndCondition/TermsAndCond";
+import AboutUs from "../pages/aboutUs/AboutUs";
+import FAQ from "../pages/faq/FAQ";
 const Routers = () => {
   return (
     <Routes>
@@ -126,6 +128,24 @@ const Routers = () => {
         element={
           <IsLoggedIn>
             <TermsAndCond />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/about-us"
+        element={
+          <IsLoggedIn>
+            <AboutUs />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/faq"
+        element={
+          <IsLoggedIn>
+            <FAQ />
           </IsLoggedIn>
         }
       />
