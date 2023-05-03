@@ -21,6 +21,8 @@ import Tips from "../pages/tips/Tips";
 import TermsAndCond from "../pages/termsAndCondition/TermsAndCond";
 import AboutUs from "../pages/aboutUs/AboutUs";
 import FAQ from "../pages/faq/FAQ";
+import Help from "../pages/helpCenter/Help";
+import Donor from "../pages/donors/Donor";
 const Routers = () => {
   return (
     <Routes>
@@ -146,6 +148,24 @@ const Routers = () => {
         element={
           <IsLoggedIn>
             <FAQ />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/help-center"
+        element={
+          <IsLoggedIn>
+            <Help />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/donors"
+        element={
+          <IsLoggedIn>
+            <Donor />
           </IsLoggedIn>
         }
       />
