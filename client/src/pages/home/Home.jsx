@@ -28,14 +28,13 @@ import imgTwentyFive from "../../assets/images/5302668.png";
 
 const Home = () => {
   return (
-    <div className="m-3 p-2 md:p-5 rounded-3xl text-sky-300">
+    <div>
       <div
         style={{
           position: "relative",
           backgroundColor: "#272c32",
           width: "100%",
           height: "3803px",
-          overflowY: "auto",
           textAlign: "left",
           fontSize: "18px",
           color: "#fff",
@@ -44,14 +43,14 @@ const Home = () => {
       >
         <div
           style={{
-            position: "absolute",
+            position: "relative",
             top: "2670px",
             left: "0px",
             borderRadius: "200px 0px 0px 0px",
             backgroundColor: "#171a20",
             boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             width: "100%",
-            MaxWidth: "1440px",
+            MaxWidth: "144%",
             MinHeight: "50%",
             maxHeight: "80%",
             top: "50%",
@@ -1476,7 +1475,7 @@ const Home = () => {
             position: "absolute",
             top: "0px",
             left: "-2px",
-            width: "1442px",
+            width: "144%",
             height: "465px",
             objectFit: "cover",
           }}
@@ -1489,7 +1488,7 @@ const Home = () => {
             top: "0px",
             left: "-2px",
             backgroundColor: "rgba(0, 0, 0, 0.1)",
-            width: "1442px",
+            width: "144%",
             height: "465px",
           }}
         />
@@ -1497,11 +1496,11 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "197px",
-            left: "584px",
+            left: "40%",
             fontSize: "32px",
             fontWeight: "300",
             display: "inline-block",
-            width: "272px",
+            width: "27%",
             height: "48px",
             textShadow: "0px 0px 0px rgba(255, 255, 255, 0.01)",
           }}
@@ -1512,7 +1511,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "259px",
-            left: "651px",
+            left: "44%",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             width: "135px",
             height: "37.98px",
