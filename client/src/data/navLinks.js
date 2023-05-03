@@ -1,13 +1,18 @@
 import { AiOutlineCloudUpload, AiOutlineControl } from "react-icons/ai";
 import { GoFileSubmodule } from "react-icons/go";
-import { FaDonate, FaFileAudio, FaHireAHelper, FaMars, FaRegSnowflake } from "react-icons/fa";
-import { MdOutlineContacts, MdOutlineLeaderboard, MdOutlinePostAdd, MdOutlineTipsAndUpdates, MdWorkOutline } from "react-icons/md";
+import {
+  FaDonate,
+  FcAbBsInfoSquareout,
+  FaHireAHelper,
+  FaMars,
+} from "react-icons/fa";
+import { MdOutlineContacts, MdOutlineLeaderboard, MdOutlinePostAdd, MdOutlineTipsAndUpdates, MdPrivacyTip, MdWorkOutline } from "react-icons/md";
 import { GiAwareness, GiGalaxy, GiSunRadiations, GiTalk, GiWildfires } from "react-icons/gi";
 import { RiEarthquakeLine } from "react-icons/ri";
-import { BsTropicalStorm, BsTsunami } from "react-icons/bs";
+import { BsFillInfoSquareFill, BsPatchQuestion, BsTropicalStorm, BsTsunami } from "react-icons/bs";
 import { TiWeatherPartlySunny } from "react-icons/ti";
-import { GrCircleAlert } from "react-icons/gr";
 import { FcAbout, FcDonate, FcFaq, FcRules } from "react-icons/fc";
+import { HiOutlineHome } from "react-icons/hi";
 
 export const links = [
   {
@@ -30,7 +35,16 @@ export const links = [
       },
     ],
   },
-
+  // {
+  //   title: "Home",
+  //   links: [
+  //     {
+  //       name: "Home",
+  //       route: "",
+  //       icon: <HiOutlineHome />,
+  //     },
+  //   ],
+  // },
   {
     title: "Track-Disasters",
     links: [
@@ -73,60 +87,6 @@ export const links = [
   },
 
   {
-    title: "Explore-Galaxy",
-    links: [
-      {
-        name: "Galaxy-Overview",
-        route: "galaxy-overview",
-        icon: <GiGalaxy />,
-      },
-      {
-        name: "Awareness",
-        route: "galaxy-awareness",
-        icon: <GiAwareness />,
-      },
-    ],
-  },
-
-  {
-    title: "Explore-Mars",
-    links: [
-      {
-        name: "Mars-Overview",
-        route: "mars-overview",
-        icon: <FaMars />,
-      },
-      {
-        name: "Awareness",
-        route: "mars-awareness",
-        icon: <GiAwareness />,
-      },
-    ],
-  },
-
-  {
-    title: "General",
-    links: [
-      {
-        name: "Terms And Conditions",
-        route: "terms-conditions",
-        icon: <FcRules />,
-      },
-      {
-        name: "About Us",
-        route: "about-us",
-        icon: <FcAbout />,
-      },
-
-      {
-        name: "TIPS",
-        route: "tips",
-        icon: <MdOutlineTipsAndUpdates />,
-      },
-    ],
-  },
-
-  {
     title: "Donors",
     links: [
       {
@@ -142,6 +102,38 @@ export const links = [
     ],
   },
 
+  // {
+  //   title: "Explore-Galaxy",
+  //   links: [
+  //     {
+  //       name: "Galaxy-Overview",
+  //       route: "galaxy-overview",
+  //       icon: <GiGalaxy />,
+  //     },
+  //     {
+  //       name: "Awareness",
+  //       route: "galaxy-awareness",
+  //       icon: <GiAwareness />,
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   title: "Explore-Mars",
+  //   links: [
+  //     {
+  //       name: "Mars-Overview",
+  //       route: "mars-overview",
+  //       icon: <FaMars />,
+  //     },
+  //     {
+  //       name: "Awareness",
+  //       route: "mars-awareness",
+  //       icon: <GiAwareness />,
+  //     },
+  //   ],
+  // },
+
   {
     title: "Support",
     links: [
@@ -156,9 +148,30 @@ export const links = [
         icon: <FaHireAHelper />,
       },
       {
+        name: "TIPS",
+        route: "tips",
+        icon: <MdOutlineTipsAndUpdates />,
+      },
+    ],
+  },
+
+  {
+    title: "General",
+    links: [
+      {
+        name: "Terms And Conditions",
+        route: "terms-conditions",
+        icon: <MdPrivacyTip />,
+      },
+      {
+        name: "About Us",
+        route: "about-us",
+        icon: <BsFillInfoSquareFill />,
+      },
+      {
         name: "FAQ",
         route: "faq",
-        icon: <FcFaq />,
+        icon: <BsPatchQuestion />,
       },
     ],
   },
