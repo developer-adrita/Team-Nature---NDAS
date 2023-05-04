@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import { Header } from "../../components";
 import "./Contact.css";
 
-const initialData = { name: "", email: "", phone:"", description: "" };
+const initialData = { fname: "", lname: "", email: "", phone:"", description: "" };
 
 const Contact = () => {
 	const [formData, setFormData] = useState(initialData);
@@ -41,8 +41,8 @@ const Contact = () => {
               id="grid-first-name"
               type="text"
               placeholder="first-name"
-              name="name"
-              value={formData.name}
+              name="fname"
+              value={formData.fname}
             />
           </div>
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -59,8 +59,8 @@ const Contact = () => {
               id="grid-first-name"
               type="text"
               placeholder="last-name"
-              name="name"
-              value={formData.name}
+              name="lname"
+              value={formData.lname}
             />
           </div>
         </div>
@@ -80,8 +80,8 @@ const Contact = () => {
               id="grid-first-name"
               type="text"
               placeholder="email"
-              email="email"
-              value={formData.name}
+              name="email"
+              value={formData.email}
             />
           </div>
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -98,8 +98,8 @@ const Contact = () => {
               id="grid-first-name"
               type="text"
               placeholder="phone-no"
-              phone="number"
-              value={formData.name}
+              name="phone"
+              value={formData.phone}
             />
           </div>
         </div>
