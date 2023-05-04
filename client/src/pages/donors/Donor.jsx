@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import "./Donor.css";
-import { Header } from "../../components";
 
-const initialData = { name: "", email: "", phone: "", description: "" };
+
+const initialData = { name: "", email: "", phone: "", donate: "", description: "" };
 
 const Donor = () => {
   const [formData, setFormData] = useState(initialData);
@@ -44,7 +44,7 @@ const Donor = () => {
                   className="block uppercase tracking-wide text-gray-300	 text-xs font-bold mb-2 "
                   htmlFor="grid-first-name "
                 >
-                  First Name
+                  Name
                 </label>
                 <input
                   required
@@ -71,8 +71,8 @@ const Donor = () => {
                   id="grid-first-name"
                   type="text"
                   placeholder="email"
-                  email="email"
-                  value={formData.name}
+                  name="email"
+                  value={formData.email}
                 />
               </div>
             </div>
@@ -92,8 +92,8 @@ const Donor = () => {
                   id="grid-first-name"
                   type="text"
                   placeholder="phone-no"
-                  phone="number"
-                  value={formData.name}
+                  name="phone"
+                  value={formData.phone}
                 />
               </div>
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -110,8 +110,8 @@ const Donor = () => {
                   id="grid-first-name"
                   type="text"
                   placeholder="donate-amount"
-                  name="name"
-                  value={formData.name}
+                  name="donate"
+                  value={formData.donate}
                 />
               </div>
             </div>
