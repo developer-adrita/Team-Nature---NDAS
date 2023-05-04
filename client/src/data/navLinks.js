@@ -10,7 +10,7 @@ import { MdOutlineContacts, MdOutlineLeaderboard, MdOutlinePostAdd, MdOutlineTip
 import { GiAwareness, GiGalaxy, GiSunRadiations, GiTalk, GiWildfires } from "react-icons/gi";
 import { RiEarthquakeLine } from "react-icons/ri";
 import { BsFillInfoSquareFill, BsPatchQuestion, BsTropicalStorm, BsTsunami } from "react-icons/bs";
-import { TiWeatherPartlySunny } from "react-icons/ti";
+import { TiNews, TiWeatherPartlySunny } from "react-icons/ti";
 import { FcAbout, FcDonate, FcFaq, FcRules } from "react-icons/fc";
 import { HiOutlineHome } from "react-icons/hi";
 
@@ -35,16 +35,21 @@ export const links = [
       },
     ],
   },
-  // {
-  //   title: "Home",
-  //   links: [
-  //     {
-  //       name: "Home",
-  //       route: "",
-  //       icon: <HiOutlineHome />,
-  //     },
-  //   ],
-  // },
+  {
+    title: "Home",
+    links: [
+      {
+        name: "Home",
+        route: "",
+        icon: <HiOutlineHome />,
+      },
+      {
+        name: "News",
+        route: "news",
+        icon: <TiNews />,
+      },
+    ],
+  },
   {
     title: "Track-Disasters",
     links: [
