@@ -62,7 +62,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1425px",
-            left: "137px",
+            left: "5%",
             borderRadius: "20px",
             backgroundColor: "#171a20",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
@@ -76,7 +76,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1425px",
-            left: "539px",
+            left: "37%",
             borderRadius: "20px",
             backgroundColor: "#171a20",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
@@ -90,7 +90,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1425px",
-            left: "941px",
+            left: "69%",
             borderRadius: "20px",
             backgroundColor: "#171a20",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
@@ -259,8 +259,8 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "461px",
-            left: "715px",
-            width: "728px",
+            left: "51%",
+            width: "49%",
             height: "358px",
             objectFit: "cover",
           }}
@@ -270,9 +270,8 @@ const Home = () => {
         <img
           style={{
             position: "absolute",
-            top: "808px",
-            left: "-6px",
-            width: "730px",
+            top: "818px",
+            width: "51%",
             height: "358px",
             objectFit: "cover",
           }}
@@ -283,13 +282,13 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "857px",
-            left: "773px",
+            left: "55%",
             fontSize: "21px",
             fontWeight: "300",
             color: "#b5e7ee",
             textAlign: "justify",
             display: "inline-block",
-            width: "582px",
+            width: "43%",
             height: "224px",
             textShadow: "0px 0px 0px rgba(255, 255, 255, 0.01)",
           }}
@@ -308,7 +307,7 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "738px",
-            left: "68px",
+            left: "6%",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             width: "104.19px",
             height: "35px",
@@ -349,14 +348,13 @@ const Home = () => {
         </button>
         <button
           style={{
-            cursor: "pointer",
             border: "none",
             padding: "0",
             backgroundColor: "transparent",
             position: "absolute",
             top: "1107px",
-            left: "773px",
-            boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
+            left: "50.1%",
+
             width: "104.19px",
             height: "35px",
           }}
@@ -369,7 +367,7 @@ const Home = () => {
               backgroundColor: "transparent",
               position: "absolute",
               top: "0px",
-              left: "0px",
+              left: "65%",
               borderRadius: "15px",
               boxSizing: "border-box",
               width: "104.19px",
@@ -380,14 +378,14 @@ const Home = () => {
             style={{
               position: "absolute",
               top: "6px",
-              left: "16.03px",
+              left: "79%",
               fontSize: "16px",
               fontWeight: "600",
               fontFamily: "Poppins",
               color: "#51c7d9",
               textAlign: "left",
               display: "inline-block",
-              width: "77.14px",
+              width: "75%",
               height: "23px",
             }}
           >
@@ -402,7 +400,7 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "1802px",
-            left: "268px",
+            left: "14%",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             width: "101.86px",
             height: "30.47px",
@@ -449,7 +447,7 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "1805px",
-            left: "669px",
+            left: "46%",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             width: "101.86px",
             height: "30.47px",
@@ -496,7 +494,7 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "1805px",
-            left: "1071px",
+            left: "78%",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             width: "101.86px",
             height: "30.47px",
@@ -586,7 +584,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1433px",
-            left: "144px",
+            left: "5.6%",
             borderRadius: "20px 20px 0px 0px",
             width: "348px",
             height: "280px",
@@ -599,7 +597,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1436px",
-            left: "547px",
+            left: "37.5%",
             borderRadius: "20px 20px 0px 0px",
             width: "347px",
             height: "280px",
@@ -612,7 +610,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1433px",
-            left: "948px",
+            left: "69.6%",
             borderRadius: "20px 20px 0px 0px",
             width: "347px",
             height: "280px",
@@ -625,7 +623,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1732px",
-            left: "174px",
+            left: "7.4%",
             fontSize: "20px",
             fontWeight: "300",
             textAlign: "center",
@@ -641,7 +639,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1733px",
-            left: "539px",
+            left: "37.5%",
             fontSize: "20px",
             fontWeight: "300",
             textAlign: "center",
@@ -657,7 +655,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1733px",
-            left: "965px",
+            left: "71%",
             fontSize: "20px",
             fontWeight: "300",
             textAlign: "center",
@@ -1270,11 +1268,10 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3636px",
-            left: "-2px",
             backgroundColor: "#171a20",
             borderTop: "1px solid #878787",
             boxSizing: "border-box",
-            width: "1440px",
+            width: "100%",
             height: "167px",
           }}
         />
@@ -1286,7 +1283,7 @@ const Home = () => {
             fontSize: "20px",
           }}
         >
-          "Helping people prepare for natural disasters worldwide."
+          "NDAS - Helping People to Alert!"
         </div>
         <div
           style={{
@@ -1435,12 +1432,12 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "501px",
-            left: "68px",
+            left: "6%",
             fontSize: "21px",
             color: "#b5e7ee",
             textAlign: "justify",
             display: "inline-block",
-            width: "586px",
+            width: "43%",
             height: "231px",
             textShadow: "0px 0px 0px rgba(255, 255, 255, 0.01)",
           }}
@@ -1456,7 +1453,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1228px",
-            left: "361px",
+            left: "28%",
             fontSize: "30px",
             fontWeight: "600",
             color: "#5cd8eb",
@@ -1474,7 +1471,6 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "0px",
-            left: "-2px",
             width: "144%",
             height: "465px",
             objectFit: "cover",
@@ -1488,7 +1484,7 @@ const Home = () => {
             top: "0px",
             left: "-2px",
             backgroundColor: "rgba(0, 0, 0, 0.1)",
-            width: "144%",
+            width: "104+%",
             height: "465px",
           }}
         />
