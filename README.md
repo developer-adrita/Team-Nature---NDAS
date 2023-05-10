@@ -15,11 +15,11 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 
 <h2> Created initial design for Wildfire page </h2> <br/>
 
-<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929275/Wildfire_te1z5g.jpg" /> <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749181/Wildfire_epwqxx.jpg" /> <br/>
 
 <h2> Created initial design for Earthquake page </h2> <br/>
 
-<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929280/Earthquake_uymvng.jpg" /> <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749190/Earthquake_jl7s06.jpg" /> <br/>
 
 <h2> Created initial design for About Us page </h2> <br/>
 
@@ -35,7 +35,7 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 
 <h2>Created initial design for Weather Forecast page </h2> <br/>
 
-<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747441/WeatherForcast_rl3dg6.jpg"/> <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749175/WeatherForcast_j4hjme.jpg"/> <br/>
 
 <h2>Created initial design for Drought page </h2> <br/>
 
@@ -44,7 +44,6 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 <h2>Created initial design for Flood page </h2><br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749050/Flood_jtwyg6.jpg"/> <br/>
-
 
 <h2>Created initial design for Storm page </h2> <br/>
 
