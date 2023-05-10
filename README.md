@@ -64,3 +64,8 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 <h2>Created initial design for Donor Leaderboard page </h2><br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749427/Donors_Leaderboard_u0f2ux.jpg"/> <br/>
+
+<h2>Created initial design for Terms & Conditions page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749413/Terms_and_Conditions_bmvgdk.jpg"/> <br/>
+
