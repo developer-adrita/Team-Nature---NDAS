@@ -3,43 +3,48 @@ import support from "../../assets/images/support 1.svg";
 import Emergency from "../../assets/images/emergency (3) 1.svg";
 import FireService from "../../assets/images/firefighter 1.png";
 import FundRising from "../../assets/images/payment (1) 1.svg";
+import HelpTable from "./HelpTable";
+const cards = {
+  container: {
+    position: "relative",
+    width: "207px",
+    height: "119px",
+    left: "0px",
+    top: "0px",
+    background:
+      "linear-gradient(90.06deg, rgba(141, 145, 145, 0.2) -8.58%, rgba(105, 207, 230, 0.02) 109.39%)",
+    borderRadius: "15px",
+  },
+  image: {
+    position: "absolute",
+    width: "55px",
+    height: "54px",
+    left: "76px",
+    top: "18px",
+    backgroundImage: "url(../../assets/images/support 1.svg)",
+  },
+  title: {
+    position: "absolute",
+    width: "147px",
+    height: "23px",
+    left: "35px",
+    top: "82px",
+    fontFamily: "'Poppins', sans-serif",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: "15px",
+    lineHeight: "22px",
+    textAlign: "center",
+    color: "#FFFFFF",
+  },
+};
+
+const data = [
+  { _id: 0, avatar: "😀", name: "Akash", area: "DSC, Dhaka" },
+  { _id: 1, avatar: "😀", name: "Akash - Kundu", area: "DSC, Dhaka" },
+];
+
 const Help = () => {
-
-    const cards = {
-      container: {
-        position: "relative",
-        width: "207px",
-        height: "119px",
-        left: "0px",
-        top: "0px",
-        background:
-          "linear-gradient(90.06deg, rgba(141, 145, 145, 0.2) -8.58%, rgba(105, 207, 230, 0.02) 109.39%)",
-        borderRadius: "15px",
-      },
-      image: {
-        position: "absolute",
-        width: "55px",
-        height: "54px",
-        left: "76px",
-        top: "18px",
-        backgroundImage: "url(../../assets/images/support 1.svg)",
-      },
-      title: {
-        position: "absolute",
-        width: "147px",
-        height: "23px",
-        left: "35px",
-        top: "82px",
-        fontFamily: "'Poppins', sans-serif",
-        fontStyle: "normal",
-        fontWeight: 300,
-        fontSize: "15px",
-        lineHeight: "22px",
-        textAlign: "center",
-        color: "#FFFFFF",
-      },
-    };
-
   return (
     <div
       style={{
@@ -186,6 +191,17 @@ const Help = () => {
           </div>
         </div>
       </div>
+
+      <div className="flex container flex-col">
+        <h2>Volunteer</h2>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quisquam
+          dolorum labore vitae repellendus, ratione incidunt nemo a eos culpa?
+          Tempora magnam nostrum dolores aliquid eligendi. Dicta eveniet nobis
+          eum?
+        </div>
+      </div>
+      <HelpTable data={data} />
     </div>
   );
 };
