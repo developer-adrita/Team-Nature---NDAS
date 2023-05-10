@@ -37,6 +37,9 @@ Created initial desing for Weather Forecast page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747441/WeatherForcast_rl3dg6.jpg"/> <br/>
 
+Created initial desing for Drought page <br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747722/Drought_vnmq2v.jpg"/> <br/>
 
 
 
