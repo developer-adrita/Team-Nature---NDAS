@@ -11,7 +11,7 @@ Created initial desing for registration page <br/>
 
 Created initial desing for login page <br/>
 
-<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929259/Login_Page_bea1gz.jpg" /> <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683748317/Login_Page_suewkc.jpg" /> <br/>
 
 Created initial desing for Wildfire page <br/>
 
