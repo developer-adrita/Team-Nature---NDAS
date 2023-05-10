@@ -41,5 +41,8 @@ Created initial desing for Drought page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747722/Drought_vnmq2v.jpg"/> <br/>
 
+Created initial desing for Flood page <br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747838/Flood_m7htcz.jpg"/> <br/>
 
 
