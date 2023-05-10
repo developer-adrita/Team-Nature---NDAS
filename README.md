@@ -29,7 +29,8 @@ Created initial desing for FAQ page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929300/FAQ_dghbqr.jpg" /> <br/>
 
-
+Created initial design for My Profile page <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747162/My_Profile1_g3krwq.png"/> <br/>
 
 
 
