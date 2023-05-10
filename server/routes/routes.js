@@ -1,46 +1,27 @@
 const homeRoute = require("./homeRoute");
 const userRoute = require("./userRoute");
-const courseRoute = require("./courseRoute");
-const topicRoute = require("./topicRoute");
+const tipsRoute = require("./tipsRoute");
 const profileRoute = require("./profileRoute");
-const classRoute = require("./classRoute");
-const audioRoute = require("./audioRoute");
-const topicContentRoute = require("./topicContentRoute");
+
+// const topicContentRoute = require("./topicContentRoute");
 
 const routers = [
-	{
-		path: "/",
-		handler: homeRoute,
-	},
-	{
-		path: "/api/user",
-		handler: userRoute,
-	},
-	{
-		path: "/api/profile",
-		handler: profileRoute,
-	},
-	{
-		path: "/api/class",
-		handler: classRoute,
-	},
-	{
-		path: "/api/course",
-		handler: courseRoute,
-	},
-	{
-		path: "/api/topic",
-		handler: topicRoute,
-	},
-
-	{
-		path: "/api/topicContent",
-		handler: topicContentRoute,
-	},
-	{
-		path: "/api/audio",
-		handler: audioRoute,
-	},
+  {
+    path: "/",
+    handler: homeRoute,
+  },
+  {
+    path: "/api/user",
+    handler: userRoute,
+  },
+  {
+    path: "/api/profile",
+    handler: profileRoute,
+  },
+  {
+    path: "/api/tips",
+    handler: tipsRoute,
+  },
 ];
 
 module.exports = (app) => {
