@@ -9,7 +9,7 @@ Created initial design for Registration page <br/>
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683748430/Registration_Page_gzbzat.jpg" /> <br/>
 
 
-Created initial design for Login page <br/>
+<h2> Created initial design for Login page </h2> <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683748317/Login_Page_suewkc.jpg" /> <br/>
 
