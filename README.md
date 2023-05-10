@@ -27,7 +27,7 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 
 <h2> Created initial design for FAQ page </h2><br/>
 
-<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1677929300/FAQ_dghbqr.jpg" /> <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749406/FAQ_s0m4mb.jpg" /> <br/>
 
 <h2>Created initial design for My Profile page </h2> <br/>
 
@@ -56,3 +56,7 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 <h2>Created initial design for Contact Us page </h2><br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683748830/Contacts_fy6le2.jpg"/> <br/>
+
+<h2>Created initial design for Donate Us page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749421/Donate_Us_sh3bsb.jpg"/> <br/>
