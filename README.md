@@ -46,3 +46,6 @@ Created initial desing for Flood page <br/>
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747838/Flood_m7htcz.jpg"/> <br/>
 
 
+Created initial desing for Storm page <br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747955/Strom_qnmyw0.jpg"/> <br/>
