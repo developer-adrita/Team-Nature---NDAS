@@ -33,19 +33,24 @@ Created initial design for My Profile page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747162/My_Profile1_g3krwq.png"/> <br/>
 
-Created initial desing for Weather Forecast page <br/>
+Created initial design for Weather Forecast page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747441/WeatherForcast_rl3dg6.jpg"/> <br/>
 
-Created initial desing for Drought page <br/>
+Created initial design for Drought page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747722/Drought_vnmq2v.jpg"/> <br/>
 
-Created initial desing for Flood page <br/>
+Created initial design for Flood page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747838/Flood_m7htcz.jpg"/> <br/>
 
 
-Created initial desing for Storm page <br/>
+Created initial design for Storm page <br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747955/Strom_qnmyw0.jpg"/> <br/>
+
+Created initial design for Help Center page <br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683748106/Help_Center_prhtli.jpg"/> <br/>
+
