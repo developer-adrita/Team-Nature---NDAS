@@ -1,60 +1,32 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { Header } from "../../components";
-import {
-  useAddTopicContentMutation,
-  useViewTopicQuery,
-} from "../../services/apiSlice";
+
+
+// import {
+//   useAddTopicContentMutation,
+//   useViewTopicQuery,
+// } from "../../services/apiSlice";
 
 const initialData = {
-  teacherName: "",
-  topicName: "",
-  description: "",
-  topicVideo: "",
-  category: "",
-  video: "",
+//
 };
 
 const HelpCenter = () => {
   const [formData, setFormData] = useState(initialData);
-  const [addCategory, topicResponseInfo] = useAddTopicContentMutation();
-  const responseInfo = useViewTopicQuery();
 
   const [fileAdded, setFileAdded] = useState(false);
 
   const handleFileChange = (event) => {
-    if (event.target.files.length > 0) {
-      setFileAdded(true);
-    } else {
-      setFileAdded(false);
-    }
+  //  
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    addCategory(formData)
-      .unwrap()
-      .then((res) => {
-        if (res.success) {
-          toast.success("New category added");
-          e.target.reset();
-          setFormData(initialData);
-        } else {
-          toast.error("Couldn't add the category");
-        }
-      })
-      .catch((e) => toast.error(e.message));
+    // 
   };
 
   const handleOnChange = (e) => {
-    if (e.target.name === "topicVideo") {
-      return setFormData((prev) => ({
-        ...prev,
-        video: e.target.files[0],
-      }));
-    }
-
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+// 
   };
 
   return (
@@ -79,7 +51,7 @@ const HelpCenter = () => {
               type="text"
               placeholder="name"
               name="teacherName"
-              value={formData.teacherName}
+              value="This will change by dynamic"
             />
           </div>
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -133,7 +105,7 @@ const HelpCenter = () => {
               type="message"
               placeholder="Write details here..."
               name="description"
-              value={formData.description}
+              value="This will change by dynamic"
               onChange={handleOnChange}
             />
             <p className="text-sky-300 text-xs italic ml-5">
