@@ -39,16 +39,16 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 
 <h2>Created initial design for Drought page </h2> <br/>
 
-<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747722/Drought_vnmq2v.jpg"/> <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749059/Drought_pp2dfh.jpg"/> <br/>
 
 <h2>Created initial design for Flood page </h2><br/>
 
-<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747838/Flood_m7htcz.jpg"/> <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749050/Flood_jtwyg6.jpg"/> <br/>
 
 
 <h2>Created initial design for Storm page </h2> <br/>
 
-<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683747955/Strom_qnmyw0.jpg"/> <br/>
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749042/Strom_rc4eqo.jpg"/> <br/>
 
 <h2>Created initial design for Help Center page </h2><br/>
 
