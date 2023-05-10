@@ -54,3 +54,6 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683748106/Help_Center_prhtli.jpg"/> <br/>
 
+<h2>Created initial design for Contact Us page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683748830/Contacts_fy6le2.jpg"/> <br/>
