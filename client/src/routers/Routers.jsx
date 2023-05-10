@@ -16,13 +16,15 @@ import SuperAdminUploads from "../pages/dashboard/SuperAdminUploads";
 import Wildfire from "../pages/trackDiaster/wildfire/Wildfire";
 import Earthquake from "../pages/trackDiaster/earthquake/Earthquake";
 import Weather from "../pages/weather/Weather";
-import Home from "../pages/home/Home"
+import Home from "../pages/home/Home";
 import Tips from "../pages/tips/Tips";
 import TermsAndCond from "../pages/termsAndCondition/TermsAndCond";
 import AboutUs from "../pages/aboutUs/AboutUs";
 import FAQ from "../pages/faq/FAQ";
 import Help from "../pages/helpCenter/Help";
 import Donor from "../pages/donors/Donor";
+import SingleTipPage from "../pages/tips/SingleTipPage";
+import AllControls from "../pages/controls/AllControls";
 const Routers = () => {
   return (
     <Routes>
@@ -121,6 +123,24 @@ const Routers = () => {
         element={
           <IsLoggedIn>
             <Tips />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/tips/:tipId"
+        element={
+          <IsLoggedIn>
+            <SingleTipPage />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/controls"
+        element={
+          <IsLoggedIn>
+            <AllControls />
           </IsLoggedIn>
         }
       />
