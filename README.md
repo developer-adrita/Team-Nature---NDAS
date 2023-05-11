@@ -69,3 +69,8 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683749413/Terms_and_Conditions_bmvgdk.jpg"/> <br/>
 
+<h2>Created initial design for Tips page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683804227/Tips_d0s7nu.png"/> <br/>
+
+
