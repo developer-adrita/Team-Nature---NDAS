@@ -77,3 +77,6 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683992741/Tips_1_ijjpce.jpg"/> <br/>
 
+<h2>Created initial design for Earthquake Tips  page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683993060/Tips_2_iibtuq.jpg"/> <br/>
