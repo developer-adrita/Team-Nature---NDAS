@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import AddTips from "./AddTips";
-import TopicContent from "./TopicContent";
+
 import HelpCenter from "./HelpCenter";
 
 const Uploads = () => {
@@ -12,9 +12,9 @@ const Uploads = () => {
         <AddTips />
       </div>
 
-      <div>
+      {/* <div>
         <TopicContent />
-      </div>
+      </div> */}
 
       <div>
         <HelpCenter />
