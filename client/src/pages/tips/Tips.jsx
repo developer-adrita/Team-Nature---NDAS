@@ -5,53 +5,55 @@ import imgIconFour from "../../assets/images/floodIcon.svg";
 import imgIconFive from "../../assets/images/stromIcon.svg";
 import imgIconSix from "../../assets/images/droughtIcon.svg";
 import { useNavigate } from "react-router-dom";
-import { useGetClassesQuery } from "../../services/apiSlice";
+import { useViewTipsQuery } from "../../services/apiSlice";
 
-const tipsData = [
-  {
-    _id: 0,
-    title: "Weather",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
-    icon: imgIconOne,
-    headerImg: ''
-  },
-  {
-    _id: 1,
-    title: "Wildfire",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
-    icon: imgIconTwo,
-  },
-  {
-    _id: 2,
-    title: "Earthquake",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
-    icon: imgIconThree,
-  },
-  {
-    _id: 3,
-    title: "Flood",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
-    icon: imgIconFour,
-  },
-  {
-    _id: 4,
-    title: "Storm",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
-    icon: imgIconFive,
-  },
-  {
-    _id: 5,
-    title: "Drought",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
-    icon: imgIconSix,
-  },
-];
+const avatars = { Weather: imgIconOne, Wildfire: imgIconTwo, EarthQuake: imgIconThree, Flood: imgIconFour };
+
+// const tipsData = [
+//   {
+//     _id: 0,
+//     title: "Weather",
+//     description:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
+//     icon: imgIconOne,
+//     headerImg: ''
+//   },
+//   {
+//     _id: 1,
+//     title: "Wildfire",
+//     description:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
+//     icon: imgIconTwo,
+//   },
+//   {
+//     _id: 2,
+//     title: "Earthquake",
+//     description:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
+//     icon: imgIconThree,
+//   },
+//   {
+//     _id: 3,
+//     title: "Flood",
+//     description:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
+//     icon: imgIconFour,
+//   },
+//   {
+//     _id: 4,
+//     title: "Storm",
+//     description:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
+//     icon: imgIconFive,
+//   },
+//   {
+//     _id: 5,
+//     title: "Drought",
+//     description:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante vel nisi pharetra rhoncus. Integer sollicitudin, eros id dapibus malesuada, quam eros dictum justo, vel consectetur magna neque vitae tortor.",
+//     icon: imgIconSix,
+//   },
+// ];
 
 const cards = {
   boxSizing: "border-box",
@@ -74,7 +76,7 @@ const cards = {
 function Tips() {
   const navigate = useNavigate();
 
-  // const tipsData = useGetClassesQuery();
+  const tipsData = useViewTipsQuery();
 
   return (
     <div className="m-3 p-2 md:p-5 rounded-3xl mb-8">
@@ -84,7 +86,7 @@ function Tips() {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {tipsData.map((data) => {
+        {tipsData.data?.Tip.map((data,index) => {
           return (
             <div
               key={data._id}
@@ -107,7 +109,7 @@ function Tips() {
                     marginRight: "1rem",
                     marginLeft: "5px",
                   }}
-                  src={data.icon}
+                  src={avatars[`${data.topicName}`]}
                   alt="Icon"
                 />
                 <h2
@@ -117,7 +119,7 @@ function Tips() {
                     color: "#fff",
                   }}
                 >
-                  {data.title}
+                  {data.topicName}
                 </h2>
               </div>
               <div
@@ -149,7 +151,7 @@ function Tips() {
                     color: "#d1d5db",
                   }}
                 >
-                  {data.description}
+                  {data.topicDesc}
                 </p>
               </div>
             </div>
