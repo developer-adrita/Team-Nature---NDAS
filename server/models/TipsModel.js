@@ -11,6 +11,21 @@ const topicSchema = new Schema({
     required: true,
     trim: true,
   },
+  topicDescOne: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  topicDescTwo: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  topicDescThree: {
+    type: String,
+    required: true,
+    trim: true,
+  },
   topicAvatar: {
     type: String,
     default:
