@@ -14,8 +14,9 @@ const topicSchema = new Schema({
   topicAvatar: {
     type: String,
     default:
-      "https://res.cloudinary.com/hostingimagesservice/image/upload/v1674789496/eduBangla/images/default-class-avatar_ipetqv.jpg",
+      "https://res.cloudinary.com/dyuykdb4p/image/upload/v1683788773/NDAS/wp2381640_lljdz0.jpg",
   },
+  topicAvatarCloudinaryId: String,
 });
 
-module.exports = model("Topic", topicSchema);
+module.exports = model("Tip", topicSchema);
