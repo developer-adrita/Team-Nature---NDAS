@@ -41,7 +41,7 @@ const SingleTipPage = () => {
           objectFit: "cover",
         }}
         alt=""
-        src="/rectangle-51@2x.png"
+        src={location.state.topicAvatar}
       />
       <div
         style={{
@@ -73,7 +73,7 @@ const SingleTipPage = () => {
           fontWeight: "500",
         }}
       >
-        {location.state.title}
+        {location.state.topicName}
       </div>
       <img
         style={{
@@ -123,7 +123,7 @@ const SingleTipPage = () => {
           fontWeight: "600",
         }}
       >
-        {location.state.description}
+        {location.state.topicDesc}
       </div>
       <div
         style={{
