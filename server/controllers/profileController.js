@@ -28,7 +28,7 @@ exports.addProfile = expressAsyncHandler(async (req, res) => {
 	let result = {};
 	if (req.file) {
 		result = await cloudinary.uploader.upload(req.file.path, {
-			folder: "eduBangla/images",
+			folder: "NDAS/images",
 		});
 	}
 
