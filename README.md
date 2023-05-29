@@ -80,3 +80,19 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 <h2>Created initial design for Earthquake Tips  page </h2><br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683993060/Tips_2_iibtuq.jpg"/> <br/>
+
+<h2>Created initial design for Wildfire Tips  page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1683993035/Tips_3_tmrnk3.jpg"/> <br/>
+
+<h2>Created initial design for Flood Tips  page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1685350106/Tips_4_on821e.jpg"/> <br/>
+
+<h2>Created initial design for Drought Tips  page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1685350264/Tips_5_rpz5vb.jpg"/> <br/>
+
+<h2>Created initial design for Storm Tips  page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1685350281/Tips_6_et8eof.jpg"/> <br/>
