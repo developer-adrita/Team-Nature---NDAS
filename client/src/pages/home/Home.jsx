@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css"; 
+import "./Home.css";
 import imgOne from "./../../assets/images/Rectangle 11.svg";
 import imgTwo from "./../../assets/images/Rectangle 71.svg";
 import imgThree from "../../assets/images/Rectangle 74.svg";
@@ -104,9 +104,9 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2718px",
-            left: "677px",
+            left: "49%",
             borderRadius: "33px",
-            width: "324px",
+            width: "24%",
             height: "414px",
             objectFit: "cover",
           }}
@@ -117,9 +117,9 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2772px",
-            left: "362px",
+            left: "25%",
             borderRadius: "33px",
-            width: "279px",
+            width: "22%",
             height: "356px",
             objectFit: "cover",
           }}
@@ -130,9 +130,9 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2769px",
-            left: "1049px",
+            left: "75%",
             borderRadius: "33px",
-            width: "279px",
+            width: "22%",
             height: "356px",
             objectFit: "cover",
           }}
@@ -143,7 +143,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3000px",
-            left: "412px",
+            left: "29%",
             fontSize: "32px",
             fontWeight: "600",
             textAlign: "center",
@@ -159,7 +159,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2995px",
-            left: "738px",
+            left: "53%",
             fontSize: "32px",
             fontWeight: "600",
             textAlign: "center",
@@ -175,7 +175,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2995px",
-            left: "1094px",
+            left: "79%",
             fontSize: "32px",
             fontWeight: "600",
             textAlign: "center",
@@ -191,10 +191,10 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3382px",
-            left: "99px",
+            left: "3%",
             backgroundColor: "#171a20",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
-            width: "550px",
+            width: "43%",
             height: "220px",
           }}
         />
@@ -202,10 +202,10 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3382px",
-            left: "805px",
+            left: "54%",
             backgroundColor: "#171a20",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
-            width: "550px",
+            width: "43%",
             height: "220px",
           }}
         />
@@ -217,7 +217,7 @@ const Home = () => {
             borderRadius: "10px",
             border: "3px solid #05a8c0",
             boxSizing: "border-box",
-            width: "937px",
+            width: "66%",
             height: "54px",
           }}
         />
@@ -675,11 +675,11 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "2082px",
-            left: "1053px",
+            left: "76%",
             background: "linear-gradient(0deg, #4ecde0, rgba(65, 68, 68, 0))",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             boxSizing: "border-box",
-            width: "315px",
+            width: "21%",
             height: "76px",
           }}
         />
@@ -691,11 +691,11 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "2183px",
-            left: "1053px",
+            left: "76%",
             background: "linear-gradient(0deg, #4ecde0, rgba(65, 68, 68, 0))",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             boxSizing: "border-box",
-            width: "315px",
+            width: "21%",
             height: "76px",
           }}
         />
@@ -707,13 +707,14 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "2283px",
-            left: "1053px",
+            left: "76%",
             background: "linear-gradient(0deg, #4ecde0, rgba(65, 68, 68, 0))",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             boxSizing: "border-box",
-            width: "315px",
+            width: "21%",
             height: "76px",
           }}
+          
           autoFocus
         />
         <button
@@ -724,11 +725,11 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "2403px",
-            left: "1053px",
+            left: "76%",
             background: "linear-gradient(0deg, #4ecde0, rgba(65, 68, 68, 0))",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             boxSizing: "border-box",
-            width: "315px",
+            width: "21%",
             height: "76px",
           }}
           autoFocus
@@ -741,11 +742,11 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "2511px",
-            left: "1053px",
+            left: "76%",
             background: "linear-gradient(0deg, #4ecde0, rgba(65, 68, 68, 0))",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             boxSizing: "border-box",
-            width: "315px",
+            width: "21%",
             height: "76px",
           }}
           autoFocus
@@ -754,7 +755,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2102px",
-            left: "1176px",
+            left: "84.5%",
             fontSize: "27px",
             fontWeight: "600",
             color: "#77e7f8",
@@ -767,7 +768,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2205px",
-            left: "1142px",
+            left: "82%",
             fontSize: "27px",
             fontWeight: "600",
             color: "#77e7f8",
@@ -781,7 +782,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2305px",
-            left: "1134px",
+            left: "81%",
             fontSize: "27px",
             fontWeight: "600",
             color: "#77e7f8",
@@ -791,13 +792,14 @@ const Home = () => {
             textShadow: "0px 0px 0px rgba(255, 255, 255, 0.01)",
           }}
         >
-          <p style={{ margin: "0" }}>Help Center</p>
+          Help Center
+         
         </div>
         <div
           style={{
             position: "absolute",
             top: "2419px",
-            left: "1152px",
+            left: "83%",
             fontSize: "27px",
             fontWeight: "600",
             color: "#77e7f8",
@@ -810,7 +812,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2531px",
-            left: "1176px",
+            left: "84%",
             fontSize: "27px",
             fontWeight: "600",
             color: "#77e7f8",
@@ -826,7 +828,7 @@ const Home = () => {
             left: "81.83px",
             backgroundColor: "#000",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
-            width: "451.65px",
+            width: "31%",
             height: "220.03px",
           }}
         />
@@ -834,8 +836,8 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2343px",
-            left: "73px",
-            width: "231.9px",
+            left: "5%",
+            width: "16%",
             height: "229px",
             objectFit: "cover",
           }}
@@ -846,7 +848,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2371.13px",
-            left: "325.02px",
+            left: "23%",
             fontSize: "22px",
             fontWeight: "500",
             display: "inline-block",
@@ -861,7 +863,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2489px",
-            left: "392px",
+            left: "26%",
             display: "inline-block",
             width: "126px",
             height: "26px",
@@ -874,7 +876,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2530px",
-            left: "500px",
+            left: "35%",
             display: "inline-block",
             width: "11.58px",
             height: "26.06px",
@@ -887,10 +889,10 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2524.07px",
-            left: "324.52px",
+            left: "21%",
             borderTop: "1px solid #d7d6d6",
             boxSizing: "border-box",
-            width: "188.22px",
+            width: "16%",
             height: "1px",
           }}
         />
@@ -898,7 +900,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2485.9px",
-            left: "323.02px",
+            left: "22%",
             width: "31.02px",
             height: "31.02px",
             objectFit: "cover",
@@ -910,7 +912,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2528.36px",
-            left: "323.99px",
+            left: "22%",
             width: "29.09px",
             height: "29.09px",
             objectFit: "cover",
@@ -925,7 +927,7 @@ const Home = () => {
             left: "81.83px",
             backgroundColor: "#000",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
-            width: "451.65px",
+            width: "31%",
             height: "220.03px",
           }}
         />
@@ -934,7 +936,7 @@ const Home = () => {
             position: "absolute",
             top: "2078px",
             left: "73px",
-            width: "232px",
+            width: "15%",
             height: "229px",
             objectFit: "cover",
           }}
@@ -945,7 +947,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2106px",
-            left: "325px",
+            left: "23%",
             fontSize: "22px",
             fontWeight: "500",
             display: "inline-block",
@@ -961,9 +963,9 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2224px",
-            left: "369px",
+            left: "25%",
             display: "inline-block",
-            width: "149px",
+            width: "12%",
             height: "26px",
             textShadow: "0px 0px 0px rgba(255, 255, 255, 0.01)",
           }}
@@ -974,7 +976,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2265px",
-            left: "500px",
+            left: "35%",
             display: "inline-block",
             width: "11.58px",
             height: "26.06px",
@@ -987,7 +989,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2259.07px",
-            left: "324.52px",
+            left: "21%",
             borderTop: "1px solid #d7d6d6",
             boxSizing: "border-box",
             width: "188.22px",
@@ -998,7 +1000,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2220.9px",
-            left: "323.02px",
+            left: "22%",
             width: "31.02px",
             height: "31.02px",
             objectFit: "cover",
@@ -1010,7 +1012,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2263.36px",
-            left: "323.99px",
+            left: "22%",
             width: "29.09px",
             height: "29.09px",
             objectFit: "cover",
@@ -1022,10 +1024,10 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2105.97px",
-            left: "556.83px",
+            left: "40%",
             backgroundColor: "#000",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
-            width: "451.65px",
+            width: "33%",
             height: "220.03px",
           }}
         />
@@ -1033,8 +1035,8 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2101px",
-            left: "548px",
-            width: "231.9px",
+            left: "40%",
+            width: "15%",
             height: "229px",
             objectFit: "cover",
           }}
@@ -1045,7 +1047,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2129.13px",
-            left: "800.02px",
+            left: "57%",
             fontSize: "22px",
             fontWeight: "500",
             display: "inline-block",
@@ -1060,7 +1062,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2245px",
-            left: "834px",
+            left: "59%",
             display: "inline-block",
             width: "170px",
             height: "26px",
@@ -1073,7 +1075,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2288px",
-            left: "976px",
+            left: "70%",
             display: "inline-block",
             width: "11.58px",
             height: "26.06px",
@@ -1086,7 +1088,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2282.07px",
-            left: "799.52px",
+            left: "56%",
             borderTop: "1px solid #d7d6d6",
             boxSizing: "border-box",
             width: "188.22px",
@@ -1097,7 +1099,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2243.9px",
-            left: "798.02px",
+            left: "56%",
             width: "31.02px",
             height: "31.02px",
             objectFit: "cover",
@@ -1109,7 +1111,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2286.36px",
-            left: "798.99px",
+            left: "56%",
             width: "29.09px",
             height: "29.09px",
             objectFit: "cover",
@@ -1121,10 +1123,10 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2368.97px",
-            left: "556.83px",
+            left: "40%",
             backgroundColor: "#000",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
-            width: "451.65px",
+            width: "33%",
             height: "220.03px",
           }}
         />
@@ -1132,8 +1134,8 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2364px",
-            left: "548px",
-            width: "231.9px",
+            left: "40%",
+            width: "15%",
             height: "229px",
             objectFit: "cover",
           }}
@@ -1144,7 +1146,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2392.13px",
-            left: "800.02px",
+            left: "58%",
             fontSize: "22px",
             fontWeight: "500",
             display: "inline-block",
@@ -1159,7 +1161,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2508px",
-            left: "853px",
+            left: "61%",
             display: "inline-block",
             width: "149px",
             height: "26px",
@@ -1172,7 +1174,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2551px",
-            left: "975px",
+            left: "70%",
             display: "inline-block",
             width: "11.58px",
             height: "26.06px",
@@ -1185,7 +1187,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2545.07px",
-            left: "799.52px",
+            left: "57%",
             borderTop: "1px solid #d7d6d6",
             boxSizing: "border-box",
             width: "188.22px",
@@ -1196,7 +1198,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2506.9px",
-            left: "798.02px",
+            left: "57%",
             width: "31.02px",
             height: "31.02px",
             objectFit: "cover",
@@ -1208,7 +1210,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2549.36px",
-            left: "798.99px",
+            left: "57%",
             width: "29.09px",
             height: "29.09px",
             objectFit: "cover",
@@ -1236,7 +1238,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "1987px",
-            left: "1137px",
+            left: "79%",
             fontSize: "25px",
             fontWeight: "600",
             color: "#5cd8eb",
@@ -1256,7 +1258,7 @@ const Home = () => {
             backgroundColor: "transparent",
             position: "absolute",
             top: "1976px",
-            left: "1048px",
+            left: "73%",
             borderRadius: "10px",
             boxShadow: "0px 0px 0px 4px rgba(255, 255, 255, 0.01)",
             boxSizing: "border-box",
@@ -1559,7 +1561,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3405px",
-            left: "1086px",
+            left: "78%",
             fontSize: "30px",
             fontWeight: "600",
             display: "inline-block",
@@ -1574,7 +1576,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3441px",
-            left: "1086px",
+            left: "78%",
             fontSize: "30px",
             color: "#5dd4e5",
             display: "inline-block",
@@ -1589,7 +1591,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3485px",
-            left: "1086px",
+            left: "78%",
             fontSize: "15px",
             fontWeight: "300",
             display: "inline-block",
@@ -1604,7 +1606,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3548px",
-            left: "1082px",
+            left: "78%",
             width: "39px",
             height: "39px",
             objectFit: "cover",
@@ -1616,7 +1618,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3546px",
-            left: "385px",
+            left: "34.5%",
             width: "38px",
             height: "38px",
             objectFit: "cover",
@@ -1628,7 +1630,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3549px",
-            left: "1166px",
+            left: "85.5%",
             width: "46px",
             height: "35px",
             objectFit: "cover",
@@ -1640,7 +1642,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3546px",
-            left: "466px",
+            left: "27%",
             width: "45px",
             height: "34px",
             objectFit: "cover",
@@ -1652,7 +1654,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3552px",
-            left: "1126px",
+            left: "82%",
             width: "32px",
             height: "32px",
             objectFit: "cover",
@@ -1664,7 +1666,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3549px",
-            left: "428px",
+            left: "31%",
             width: "31px",
             height: "31px",
             objectFit: "cover",
@@ -1676,7 +1678,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3378px",
-            left: "801px",
+            left: "54%",
             width: "275px",
             height: "228px",
             objectFit: "cover",
@@ -1688,7 +1690,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3391px",
-            left: "387px",
+            left: "27%",
             fontSize: "30px",
             fontWeight: "600",
             display: "inline-block",
@@ -1703,7 +1705,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3475px",
-            left: "387px",
+            left: "27%",
             fontSize: "30px",
             color: "#5dd4e5",
             display: "inline-block",
@@ -1718,7 +1720,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3514px",
-            left: "387px",
+            left: "27%",
             fontSize: "15px",
             fontWeight: "300",
             display: "inline-block",
@@ -1733,7 +1735,7 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "3378px",
-            left: "95px",
+            left: "3%",
             width: "275px",
             height: "228px",
             objectFit: "cover",
