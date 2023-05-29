@@ -191,16 +191,6 @@ const Help = () => {
           </div>
         </div>
       </div>
-
-      <div className="flex container flex-col">
-        <h2>Volunteer</h2>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quisquam
-          dolorum labore vitae repellendus, ratione incidunt nemo a eos culpa?
-          Tempora magnam nostrum dolores aliquid eligendi. Dicta eveniet nobis
-          eum?
-        </div>
-      </div>
       <HelpTable data={data} />
     </div>
   );
