@@ -1,14 +1,19 @@
 import React, { useState } from "react";
+import { useAddDonorsMutation } from "../../services/apiSlice";
 import { toast } from "react-toastify";
 import "./Donor.css";
 
 
-const initialData = { name: "", email: "", phone: "", donate: "", description: "" };
+const initialData = { donorName: "", donorEmail: "", donorPhone: "", donorAmount: "", donorQuery: "" };
+
+
 
 const Donor = () => {
   const [formData, setFormData] = useState(initialData);
+  const [addDonors, responseInfo] = useAddDonorsMutation();
 
   const handleSubmit = (e) => {
+    addDonors(formData);
     e.preventDefault();
     e.target.reset();
     toast.success("Message sent");
@@ -53,8 +58,8 @@ const Donor = () => {
                   id="grid-first-name"
                   type="text"
                   placeholder="name"
-                  name="name"
-                  value={formData.name}
+                  name="donorName"
+                  value={formData.donorName}
                 />
               </div>
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -71,8 +76,8 @@ const Donor = () => {
                   id="grid-first-name"
                   type="text"
                   placeholder="email"
-                  name="email"
-                  value={formData.email}
+                  name="donorEmail"
+                  value={formData.donorEmail}
                 />
               </div>
             </div>
@@ -92,8 +97,8 @@ const Donor = () => {
                   id="grid-first-name"
                   type="text"
                   placeholder="phone-no"
-                  name="phone"
-                  value={formData.phone}
+                  name="donorPhone"
+                  value={formData.donorPhone}
                 />
               </div>
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -110,8 +115,8 @@ const Donor = () => {
                   id="grid-first-name"
                   type="text"
                   placeholder="donate-amount"
-                  name="donate"
-                  value={formData.donate}
+                  name="donorAmount"
+                  value={formData.donorAmount}
                 />
               </div>
             </div>
@@ -130,8 +135,8 @@ const Donor = () => {
                   className="appearance-none block w-full bg-[#FFFFFF]  border-gray-300 text-gray-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-[#FFFFFF]  "
                   type="message"
                   placeholder="Massage(optional)"
-                  name="description"
-                  value={formData.description}
+                  name="donorQuery"
+                  value={formData.donorQuery}
                   onChange={handleOnChange}
                 />
                 <p className="mb-2  text-gray-300 text-xs italic">
