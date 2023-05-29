@@ -35,21 +35,7 @@ export const links = [
       },
     ],
   },
-  {
-    title: "Home",
-    links: [
-      {
-        name: "Home",
-        route: "",
-        icon: <HiOutlineHome />,
-      },
-      {
-        name: "News",
-        route: "news",
-        icon: <TiNews />,
-      },
-    ],
-  },
+ 
   {
     title: "Track-Disasters",
     links: [
@@ -68,26 +54,26 @@ export const links = [
         route: "track-wildfire",
         icon: <GiWildfires />,
       },
-      {
-        name: "Drought",
-        route: "drought-detect",
-        icon: <GiSunRadiations />,
-      },
       // {
-      //   name: "Blizzard",
-      //   route: "blizzard-detect",
-      //   icon: <FaRegSnowflake />,
+      //   name: "Drought",
+      //   route: "drought-detect",
+      //   icon: <GiSunRadiations />,
       // },
-      {
-        name: "Storm",
-        route: "storm-detect",
-        icon: <BsTropicalStorm />,
-      },
-      {
-        name: "Flood",
-        route: "flood-detect",
-        icon: <BsTsunami />,
-      },
+      // // {
+      // //   name: "Blizzard",
+      // //   route: "blizzard-detect",
+      // //   icon: <FaRegSnowflake />,
+      // // },
+      // {
+      //   name: "Storm",
+      //   route: "storm-detect",
+      //   icon: <BsTropicalStorm />,
+      // },
+      // {
+      //   name: "Flood",
+      //   route: "flood-detect",
+      //   icon: <BsTsunami />,
+      // },
     ],
   },
 
