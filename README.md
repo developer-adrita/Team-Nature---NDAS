@@ -96,3 +96,19 @@ Watch Our Ui design by figma: https://www.figma.com/file/XyQMxbk8FdPPOyAqTpqFAz/
 <h2>Created initial design for Storm Tips  page </h2><br/>
 
 <img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1685350281/Tips_6_et8eof.jpg"/> <br/>
+
+<h2>Created initial design for Home  page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1685350499/Homepage_vg0h0r.jpg"/> <br/>
+
+<h2>Created initial design for Admin Uploads page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1685350741/Admin_Uploads_npe0ie.jpg"/> <br/>
+
+<h2>Created initial design for Admin Controls page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1685350659/Controls_mebhvq.jpg"/> <br/>
+
+<h2>Created initial design for Super-Admin Uploads page </h2><br/>
+
+<img src="https://res.cloudinary.com/dbginqlhc/image/upload/v1685350673/Super-Admin_Uploads_k5y5jh.jpg"/> <br/>
