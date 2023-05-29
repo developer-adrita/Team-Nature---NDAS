@@ -7,6 +7,9 @@ import { useAddTipsMutation } from "../../services/apiSlice";
 const initialData = {
   topicName: "",
   topicDesc: "",
+  topicDescOne: "",
+  topicDescTwo: "",
+  topicDescThree: "",
   topicAvatar: "",
 };
 const AddTopic = () => {
@@ -57,7 +60,7 @@ const AddTopic = () => {
 
       <form className="w-full" onSubmit={handleSubmit}>
         <div className="flex flex-wrap -mx-3 mb-6">
-          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <div className="w-full px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
               htmlFor="grid-first-name"
@@ -115,7 +118,8 @@ const AddTopic = () => {
               name="topicAvatar"
               type="file"
               onChange={(e) => {
-                handleOnChange(e); handleFileChange(e);
+                handleOnChange(e);
+                handleFileChange(e);
               }}
               disabled={responseInfo.isLoading}
               defaultValue={formData.topicAvatar}
@@ -138,7 +142,7 @@ const AddTopic = () => {
         </div>
 
         <div className="flex flex-wrap -mx-3 mb-6">
-          <div className="w-full px-3">
+          <div className="w-full md:w-1/2 px-3">
             <label
               htmlFor="message"
               className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
@@ -154,6 +158,75 @@ const AddTopic = () => {
               placeholder="Write details here..."
               name="topicDesc"
               value={formData.topicDesc}
+              onChange={handleOnChange}
+            />
+            <p className="text-sky-300 text-xs italic ml-5">
+              Make it as long and as crazy as you'd like
+            </p>
+          </div>
+
+          <div className="w-full md:w-1/2 px-3">
+            <label
+              htmlFor="message"
+              className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
+            >
+              Description 1
+            </label>
+            <textarea
+              required
+              id="message"
+              rows="4"
+              className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
+              type="message"
+              placeholder="Write details here..."
+              name="topicDescOne"
+              value={formData.topicDescOne}
+              onChange={handleOnChange}
+            />
+            <p className="text-sky-300 text-xs italic ml-5">
+              Make it as long and as crazy as you'd like
+            </p>
+          </div>
+
+          <div className="w-full md:w-1/2 px-3">
+            <label
+              htmlFor="message"
+              className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
+            >
+              Description 2
+            </label>
+            <textarea
+              required
+              id="message"
+              rows="4"
+              className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
+              type="message"
+              placeholder="Write details here..."
+              name="topicDescTwo"
+              value={formData.topicDescTwo}
+              onChange={handleOnChange}
+            />
+            <p className="text-sky-300 text-xs italic ml-5">
+              Make it as long and as crazy as you'd like
+            </p>
+          </div>
+
+          <div className="w-full md:w-1/2 px-3">
+            <label
+              htmlFor="message"
+              className="block uppercase tracking-wide text-sky-300	 text-xs font-bold mb-2 ml-5"
+            >
+              Description 3
+            </label>
+            <textarea
+              required
+              id="message"
+              rows="4"
+              className="appearance-none block w-full bg-transparent border-sky-300 text-sky-300 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-transparent rounded-3xl"
+              type="message"
+              placeholder="Write details here..."
+              name="topicDescThree"
+              value={formData.topicDescThree}
               onChange={handleOnChange}
             />
             <p className="text-sky-300 text-xs italic ml-5">
