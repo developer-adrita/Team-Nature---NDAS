@@ -136,16 +136,24 @@ export const api = createApi({
     //   invalidatesTags: ["tips"],
     // }),
 
-    addTips: builder.mutation({
+    viewHelps: builder.query({
+      query: () => ({
+        url: `api/helps`,
+        method: "GET",
+      }),
+      providesTags: ["helps"],
+    }),
 
+    addTips: builder.mutation({
       query: (formData) => {
-        console.log(formData);
         const payload = new FormData();
 
         payload.append("topicName", formData.topicName);
         payload.append("topicDesc", formData.topicDesc);
+        payload.append("topicDescOne", formData.topicDescOne);
+        payload.append("topicDescTwo", formData.topicDescTwo);
+        payload.append("topicDescThree", formData.topicDescThree);
         payload.append("topicAvatar", formData.topicAvatar);
-        
 
         return {
           url: `api/tips/add`,
@@ -155,26 +163,106 @@ export const api = createApi({
       },
       invalidatesTags: ["tips"],
     }),
+
+    deleteTip: builder.mutation({
+      query: (id) => {
+        return {
+          url: `api/tips/delete/${id}`,
+          method: "DELETE",
+        };
+      },
+      invalidatesTags: ["tips"],
+    }),
+
+    addHelps: builder.mutation({
+      query: (formData) => {
+        const payload = new FormData();
+
+        payload.append("helpName", formData.helpName);
+        payload.append("helpAddress", formData.helpAddress);
+        payload.append("helpAvatar", formData.helpAvatar);
+
+        return {
+          url: `api/helps/add`,
+          method: "POST",
+          body: payload,
+        };
+      },
+      invalidatesTags: ["helps"],
+    }),
+
+    deleteHelps: builder.mutation({
+      query: (id) => {
+        return {
+          url: `api/helps/delete/${id}`,
+          method: "DELETE",
+        };
+      },
+      invalidatesTags: ["helps"],
+    }),
+
+    addDonors: builder.mutation({
+      query: (formData) => {
+        const payload = new FormData();
+
+        payload.append("donorName", formData.donorName);
+        payload.append("donorEmail", formData.donorEmail);
+        payload.append("donorPhone", formData.donorPhone);
+        payload.append("donorAmount", formData.donorAmount);
+        payload.append("donorQuery", formData.donorQuery);
+
+        return {
+          url: `api/donors/add`,
+          method: "POST",
+          body: payload,
+        };
+      },
+      invalidatesTags: ["donors"],
+    }),
+
+    deleteDonors: builder.mutation({
+      query: (id) => {
+        return {
+          url: `api/donors/delete/${id}`,
+          method: "DELETE",
+        };
+      },
+      invalidatesTags: ["donors"],
+    }),
+
+    viewDonors: builder.query({
+      query: () => ({
+        url: `api/donors`,
+        method: "GET",
+      }),
+      providesTags: ["donors"],
+    }),
   }),
 });
 
 export const {
-	useRegisterMutation,
-	useCurrentUserQuery,
-	useLoginMutation,
-	useIsLoggedInQuery,
-	useLogoutMutation,
-	useIsTeacherQuery,
+  useRegisterMutation,
+  useCurrentUserQuery,
+  useLoginMutation,
+  useIsLoggedInQuery,
+  useLogoutMutation,
+  useIsTeacherQuery,
 
-	useGetClassesQuery,
-	useAddTipsMutation,
-	useViewTipsQuery,
+  useGetClassesQuery,
+  useAddTipsMutation,
+  useViewTipsQuery,
+  useDeleteTipMutation,
 
-	useViewCoursesQuery,
-	useAddCourseMutation,
+  useAddHelpsMutation,
+  useViewHelpsQuery,
+  useDeleteHelpsMutation,
 
-	useAddTopicMutation,
-	useViewTopicQuery,
+  useAddDonorsMutation,
+  useViewDonorsQuery,
+  useDeleteDonorsMutation,
+  useViewCoursesQuery,
+  useAddCourseMutation,
 
-	
+  useAddTopicMutation,
+  useViewTopicQuery,
 } = api;

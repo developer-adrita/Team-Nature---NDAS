@@ -1,14 +1,15 @@
 const router = require("express").Router();
+
 const {
-  getTips,
-  addTips,
-  deleteTipController,
-} = require("../controllers/tipsController");
+  addHelps,
+  getHelps,
+  deleteHelpController,
+} = require("../controllers/helpController");
 // const { addClass, getClasses } = require("../controllers/tipsController");
 const { verifyToken } = require("../middlewares/jwtMiddleware");
 const upload = require("../middlewares/upload");
-router.get("/", getTips);
-router.post("/add", upload.single("topicAvatar"), addTips);
-router.delete("/delete/:tipId", deleteTipController);
+router.get("/", getHelps);
+router.post("/add", upload.single("helpAvatar"), addHelps);
+router.delete("/delete/:helpId", deleteHelpController);
 
 module.exports = router;

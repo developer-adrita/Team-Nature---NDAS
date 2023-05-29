@@ -25,6 +25,7 @@ import Help from "../pages/helpCenter/Help";
 import Donor from "../pages/donors/Donor";
 import SingleTipPage from "../pages/tips/SingleTipPage";
 import AllControls from "../pages/controls/AllControls";
+import DonorList from "../pages/donors/DonorList";
 const Routers = () => {
   return (
     <Routes>
@@ -186,6 +187,15 @@ const Routers = () => {
         element={
           <IsLoggedIn>
             <Donor />
+          </IsLoggedIn>
+        }
+      />
+
+      <Route
+        path="/donors-leaderboard"
+        element={
+          <IsLoggedIn>
+            <DonorList />
           </IsLoggedIn>
         }
       />

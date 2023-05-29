@@ -1,10 +1,10 @@
 import React from "react";
-import HelpTableRow from "./HelpTableRow";
-import { useViewHelpsQuery } from "../../services/apiSlice";
+import DonorTableRow from "./DonorTableRow";
+import { useViewDonorsQuery } from "../../services/apiSlice";
 
-const HelpTable = ({ data }) => {
-  const responseInfo = useViewHelpsQuery();
-console.log(responseInfo.data);
+const DonorTable = ({ data }) => {
+  const responseInfo = useViewDonorsQuery();
+  
   return (
     <div
       style={{ width: "80%" }}
@@ -12,13 +12,10 @@ console.log(responseInfo.data);
     >
       <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <tbody>
-          {responseInfo?.data?.Help.length ? (
+          {responseInfo?.data?.Donor?.length ? (
             <>
-              {responseInfo.data?.Help?.map((help, i) => (
-                <HelpTableRow
-                  key={help._id}
-                  help={help}
-                />
+              {responseInfo.data?.Donor?.map((Donor, i) => (
+                <DonorTableRow key={Donor._id} Donor={Donor} />
               ))}
             </>
           ) : (
@@ -34,4 +31,4 @@ console.log(responseInfo.data);
   );
 };
 
-export default HelpTable;
+export default DonorTable;
