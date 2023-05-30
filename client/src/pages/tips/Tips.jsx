@@ -7,7 +7,7 @@ import imgIconSix from "../../assets/images/droughtIcon.svg";
 import { useNavigate } from "react-router-dom";
 import { useViewTipsQuery } from "../../services/apiSlice";
 
-const avatars = { Weather: imgIconOne, Wildfire: imgIconTwo, EarthQuake: imgIconThree, Flood: imgIconFour };
+const avatars = { Weather: imgIconOne, Wildfire: imgIconTwo, EarthQuake: imgIconThree, Flood: imgIconFour, Strom: imgIconFive, Drought:imgIconSix };
 
 // const tipsData = [
 //   {
