@@ -117,9 +117,9 @@ const Home = () => {
           style={{
             position: "absolute",
             top: "2772px",
-            left: "25%",
+            left: "27%",
             borderRadius: "33px",
-            width: "22%",
+            width: "20%",
             height: "356px",
             objectFit: "cover",
           }}
@@ -132,7 +132,7 @@ const Home = () => {
             top: "2769px",
             left: "75%",
             borderRadius: "33px",
-            width: "22%",
+            width: "20%",
             height: "356px",
             objectFit: "cover",
           }}
