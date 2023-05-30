@@ -1,5 +1,8 @@
 import React from "react";
 
+import phoneIcon from "../../assets/images/ContactIcon.svg";
+import mailIcon from "../../assets/images/EmailIcon.svg";
+import locationIcon from "../../assets/images/LocationIcon.svg";
 
 const HelpTableRow = ({ Donor }) => {
   
@@ -12,18 +15,18 @@ const HelpTableRow = ({ Donor }) => {
         <div className="flex gap-2">
           <div className="flex flex-col justify-center">
             <span>{Donor?.donorName}</span>
-            <span>{Donor?.donorEmail}</span>
+            <span>{Donor?.donorQuery}</span>
             <span>{Donor?.donorPhone}</span>
             <span>{Donor?.donorAmount}</span>
-            <span>{Donor?.donorQuery}</span>
+            <span>{Donor?.donorEmail}</span>
           </div>
         </div>
       </th>
       <td className="px-6 py-4">
-        <div className="flex gap-2 justify-end">
-          <img src="" alt="1" />
-          <img src="" alt="2" />
-          <img src="" alt="3" />
+        <div className="flex gap-4 justify-end">
+          <img src={phoneIcon} alt="1" />
+          <img src={mailIcon} alt="2" />
+          <img src={locationIcon} alt="3" />
         </div>
       </td>
     </tr>

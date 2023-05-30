@@ -63,7 +63,7 @@ exports.getDonors = expressAsyncHandler(async (req, res) => {
 exports.deleteDonorController = expressAsyncHandler(async (req, res) => {
   const { donorId } = req.params;
 
-  const deletedDonor = await Donor.findByIdAndDelete(tipId);
+  const deletedDonor = await Donor.findByIdAndDelete(donorId);
 
   if (deletedDonor) {
     return res.status(200).json({

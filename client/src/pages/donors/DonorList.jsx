@@ -1,6 +1,4 @@
 import React from 'react';
-import HelpTable from '../helpCenter/HelpTable';
-import { Header } from '../../components';
 import DonorTable from './DonorTable';
 const data = [
   { _id: 0, avatar: "😀", name: "Akash", area: "DSC, Dhaka" },
@@ -8,8 +6,21 @@ const data = [
 ];
 const DonorList = () => {
     return (
-      <div>
-        <Header category="Donor-List" />
+      <div className="flex flex-col items-center justify-center h-full">
+        <h1
+          style={{
+            fontFamily: "Poppins",
+            fontStyle: "normal",
+            fontWeight: 600,
+            fontSize: "46px",
+            color: "#05a8c0",
+            lineHeight: "54px",
+          }}
+          className="text-[#FFFFFF] py-10 px-10"
+        >
+          Donor-List
+        </h1>
+
         <DonorTable data={data} />
       </div>
     );

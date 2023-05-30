@@ -1,7 +1,7 @@
 import React from "react";
 import DonorControlsRow from "./DonorControlsRow";
 
-export const tableHeader = ["Name", "Email", "Phone", "Amount", "Query", "Action"];
+export const tableHeader = ["Name", "Query", "Email", "Phone", "Amount", "Action"];
 
 const DonorControlsTable = ({ data }) => {
     

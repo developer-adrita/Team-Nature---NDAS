@@ -2,7 +2,7 @@ import React from "react";
 import ControlsRow from "./ControlsRow";
 import HelpControlsRow from "./HelpControlsRow";
 
-export const tableHeader = ["Icon", "Name", "Address", "Action"];
+export const tableHeader = ["Icon", "Name", "Address","Action"];
 
 const HelpControlsTable = ({ data }) => {
   return (
@@ -11,7 +11,7 @@ const HelpControlsTable = ({ data }) => {
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
             {tableHeader.map((header, i) => (
-              <th key={i} scope="col" className="px-5 py-3">
+              <th key={i} scope="col" className="px-9 py-3">
                 {header}
               </th>
             ))}

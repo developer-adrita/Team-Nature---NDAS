@@ -3,14 +3,14 @@ import { useDeleteDonorsMutation } from "../../services/apiSlice";
 
 const DonorControlsRow = ({ control }) => {
     
-  const [deleteControl, deleteInfo] = useDeleteDonorsMutation();
+  const [deleteDonors, deleteInfo] = useDeleteDonorsMutation();
 
   const handleDelete = () => {
-    deleteControl(control._id)
+    deleteDonors(control._id)
       .unwrap()
       .then((response) => {
         if (response.success) {
-          toast.success(`Tip deleted successfully!`);
+          toast.success(`Donor deleted successfully!`);
         } else {
           toast.error(`Something went wrong!`);
         }

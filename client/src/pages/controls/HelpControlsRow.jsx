@@ -9,7 +9,7 @@ const HelpControlsRow = ({ control }) => {
       .unwrap()
       .then((response) => {
         if (response.success) {
-          toast.success(`Tip deleted successfully!`);
+          toast.success(`Volunteer deleted successfully!`);
         } else {
           toast.error(`Something went wrong!`);
         }
@@ -24,14 +24,14 @@ const HelpControlsRow = ({ control }) => {
         className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
       >
         <img
-          className="rounded-full h-12 w-[5rem] object-cover"
+          className="rounded-full h-12 w-12 object-cover"
           src={control.helpAvatar}
           alt="control"
         />
       </th>
-      <td className="px-7 py-4">{control.helpName}</td>
-      <td className="px-3 py-4 text-center">{control.helpAddress}</td>
-      <td className="px-6 py-4">
+      <td className="px-9 py-4">{control.helpName}</td>
+      <td className="px-9 py-4">{control.helpAddress}</td>
+      <td className="px-8 py-4">
         <button
           onClick={() => handleDelete()}
           disabled={deleteInfo.isLoading}
