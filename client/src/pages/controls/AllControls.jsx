@@ -56,17 +56,19 @@ const AllControls = () => {
       <div className="w-full mb-6 md:mb-0">
         <ControlsTable data={responseInfo?.data?.Tip} />
       </div>
-      <div className="mb-10 mt-10 text-white ml-5">
-        <div>All Volunteer</div>
-      </div>
-      <div className="w-full mb-6 md:mb-0">
-        <HelpControlsTable data={HelpsresponseInfo?.data?.Help} />
-      </div>
+
       <div className="mb-10 mt-10 text-white ml-5">
         <div>Donor-List</div>
       </div>
       <div className="w-full mb-6 md:mb-0">
         <DonorControlsTable data={DonorsresponseInfo?.data?.Donor} />
+      </div>
+
+      <div className="mb-10 mt-10 text-white ml-5">
+        <div>All Volunteer</div>
+      </div>
+      <div className="w-full mb-6 md:mb-0">
+        <HelpControlsTable data={HelpsresponseInfo?.data?.Help} />
       </div>
     </div>
   );
